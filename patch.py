@@ -7,58 +7,70 @@ import customtkinter as ctk
 import tkinter.filedialog
 import re
 
-lua_entry_str = """['cz_cs'] = {font = 6, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}}"""
+lua_entry_lang = """['cz_cs'] = {font = 6, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}}"""
+lua_entry_font = ""
 
-
-def patch_language(lua_file, lua_entry_str):
+def patch_language(lua_file, lua_entry_lang, lua_entry_font):
     with open(lua_file, "rb") as f:
         content = f.read().decode("utf-8", errors="ignore")
 
-    pattern = r"(self\.LANGUAGES\s*=\s*{)(.*?)(\n\s*})"
-    def insert_at_end(match):
+    # Patch self.LANGUAGES
+    pattern_lang = r"(self\.LANGUAGES\s*=\s*{)(.*?)(\n\s*})"
+    def insert_lang(match):
         start, body, end = match.groups()
-        
         lines = body.splitlines()
         if lines:
             indent = re.match(r"(\s*)", lines[-1]).group(1)
         else:
             indent = "    "
-        
-        new_entry_indented = "\n" + indent + lua_entry_str.strip()
-        if body.strip():
-            new_entry_indented = new_entry_indented
-        
+        new_entry_indented = "\n" + indent + lua_entry_lang.strip()
         new_body = body.rstrip() + new_entry_indented
         return start + new_body + end
+    content = re.sub(pattern_lang, insert_lang, content, flags=re.DOTALL)
 
-    content = re.sub(pattern, insert_at_end, content, flags=re.DOTALL)
+    # Patch self.FONT
+    pattern_font = r"(self\.FONT\s*=\s*{)(.*?)(\n\s*})"
+    def insert_font(match):
+        start, body, end = match.groups()
+        lines = body.splitlines()
+        if lines:
+            indent = re.match(r"(\s*)", lines[-1]).group(1)
+        else:
+            indent = "    "
+        new_entry_indented = "\n" + indent + lua_entry_font.strip()
+        new_body = body.rstrip() + new_entry_indented
+        return start + new_body + end
+    content = re.sub(pattern_font, insert_font, content, flags=re.DOTALL)
 
-    with open(lua_file, "w",encoding="utf-8") as f:
+    with open(lua_file, "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"Added new entry to {lua_file}")
+    print(f"Added new entries to {lua_file}")
 
-def remove_patch_lua(lua_file, lua_entry_str):
+def remove_patch_lua(lua_file, lua_entry_lang, lua_entry_font):
     with open(lua_file, "rb") as f:
         content = f.read().decode("utf-8", errors="ignore")
-    # escape special regex characters in the string
-    escaped_entry = re.escape(lua_entry_str.strip())
-    
-    # remove it (including optional preceding comma and whitespace)
-    pattern = rf",?\s*{escaped_entry}"
-    content = re.sub(pattern, "", content, flags=re.DOTALL)
-    
-    with open(lua_file, "w",encoding="utf-8") as f:
+    # Remove language entry
+    escaped_lang = re.escape(lua_entry_lang.strip())
+    pattern_lang = rf",?\s*{escaped_lang}"
+    content = re.sub(pattern_lang, "", content, flags=re.DOTALL)
+    # Remove font entry
+    escaped_font = re.escape(lua_entry_font.strip())
+    pattern_font = rf",?\s*{escaped_font}"
+    content = re.sub(pattern_font, "", content, flags=re.DOTALL)
+    with open(lua_file, "w", encoding="utf-8") as f:
         f.write(content)
-    
-    print(f"Removed the entry from {lua_file}")
+    print(f"Removed language and font entries from {lua_file}")
 
-def check_patch_lua(lua_file, lua_entry_str):
+def check_patch_lua(lua_file, lua_entry_lang, lua_entry_font):
     with open(lua_file, "rb") as f:
         content = f.read().decode("utf-8", errors="ignore")
-    escaped_entry = re.escape(lua_entry_str.strip())
-    pattern = rf"{escaped_entry}"
-    
-    return bool(re.search(pattern, content, flags=re.DOTALL))
+    escaped_lang = re.escape(lua_entry_lang.strip())
+    escaped_font = re.escape(lua_entry_font.strip())
+    pattern_lang = rf"{escaped_lang}"
+    pattern_font = rf"{escaped_font}"
+    lang_found = bool(re.search(pattern_lang, content, flags=re.DOTALL))
+    font_found = bool(re.search(pattern_font, content, flags=re.DOTALL))
+    return lang_found and font_found
 
 
 # Installer window using CustomTkinter
@@ -139,12 +151,12 @@ class InstallerWindow(ctk.CTk):
                 time.sleep(0.5)
                 print("Waiting for game.lua to be extracted...")
                 
-            if check_patch_lua(self.var_game_path.get()+"/game.lua", lua_entry_str):
+            if check_patch_lua(self.var_game_path.get()+"/game.lua", lua_entry_lang, lua_entry_font):
                 msg = "Patch already applied"
                 self.status_var.set(msg)
                 return msg
                 
-            patch_language(self.var_game_path.get()+"/game.lua",lua_entry_str=lua_entry_str)
+            patch_language(self.var_game_path.get()+"/game.lua",lua_entry_str=lua_entry_lang, lua_entry_font=lua_entry_font)
 
         subprocess.run([
             "7-ZipPortable/App/7-Zip64/7z.exe", "u", self.var_game_path.get()+"/balatro.exe", self.var_game_path.get()+"/game.lua",

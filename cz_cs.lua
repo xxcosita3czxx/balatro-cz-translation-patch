@@ -1294,7 +1294,7 @@ return {
                 },
             },
             j_oops={
-                name="Ups! Všechny 6tky",
+                name="Ups! Samé Šestky!",
                 text={
                     "Zdvojnásobí všechny {C:attention}zobrazené",
                     "{C:green,E:1,S:1.1}šance",
@@ -1470,7 +1470,7 @@ return {
                 },
             },
             j_scholar={
-                name="Školák",
+                name="Učenec",
                 text={
                     "Zahrané {C:attention}Esa{}",
                     "dají {C:chips}+#2#{} Žetonů",
@@ -1509,7 +1509,7 @@ return {
                 },
             },
             j_shoot_the_moon={
-                name="Střelte měsíc",
+                name="Zahrát na Měsíc",
                 text={
                     "Each {C:attention}Queen{}",
                     "held in hand",

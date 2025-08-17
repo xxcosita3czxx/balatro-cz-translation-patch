@@ -132,7 +132,7 @@ return {
         },
         Blind={
             bl_arm={
-                name="Ruka",
+                name="Paže",
                 text={
                     "Sníží úroveň",
                     "Hrané poker ruky",
@@ -158,35 +158,35 @@ return {
                 },
             },
             bl_final_acorn={
-                name="Amber Acorn",
+                name="Jantarový Žalud",
                 text={
                     "Otočí a zamýchá",
                     "všechny žolíky",
                 },
             },
             bl_final_bell={
-                name="Cerulean Bell",
+                name="Blankytný Zvon",
                 text={
                     "Alespoň 1 karta",
                     "je vždycky vybraná",
                 },
             },
             bl_final_heart={
-                name="Crimson Heart",
+                name="Karmínové Srdce",
                 text={
-                    "One random Joker",
-                    "disabled every hand",
+                    "Jeden náhodný Žolík",
+                    "deaktivován každou hranou ruku",
                 },
             },
             bl_final_leaf={
-                name="Verdant Leaf",
+                name="Zelený List",
                 text={
                     "Všechny karty jsou",
                     "oslabeny, dokud není 1 žolík prodán",
                 },
             },
             bl_final_vessel={
-                name="Violet Vessel",
+                name="Fialová Nádoba",
                 text={
                     "Extra velký blind",
                 },
@@ -206,7 +206,7 @@ return {
                 },
             },
             bl_goad={
-                name="The Goad",
+                name="Osten",
                 text={
                     "All Spade cards",
                     "are debuffed",
@@ -240,14 +240,14 @@ return {
                 },
             },
             bl_mark={
-                name="Znaménko",
+                name="Znak",
                 text={
                     "All face cards are",
                     "drawn face down",
                 },
             },
             bl_mouth={
-                name="Pusa",
+                name="Ústa",
                 text={
                     "Hraj pouze jeden typ",
                     "ruky toto kolo",
@@ -260,14 +260,14 @@ return {
                 },
             },
             bl_ox={
-                name="Ox",
+                name="Vůl",
                 text={
                     "Zahráním #1#",
                     "nastaví peníze na $0",
                 },
             },
             bl_pillar={
-                name="Pilíř",
+                name="Sloup",
                 text={
                     "Cards played previously",
                     "this Ante are debuffed",
@@ -281,7 +281,7 @@ return {
                 },
             },
             bl_psychic={
-                name="Jasnovidec",
+                name="Věštec",
                 text={
                     "Musíš zahrát 5 karet",
                 },
@@ -361,7 +361,7 @@ return {
             e_negative_consumable={
                 name="Negativní",
                 text={
-                    "{C:dark_edition}+#1#{} consumable slot",
+                    "{C:dark_edition}+#1#{} místo na spotřební karty",
                 },
             },
             e_polychrome={
@@ -409,7 +409,7 @@ return {
                 },
             },
             m_steel={
-                name="Železná Karta",
+                name="Ocelová Karta",
                 text={
                     "{X:mult,C:white} X#1# {} Mult",
                     "pokud tahle karta",
@@ -433,7 +433,7 @@ return {
         },
         Joker={
             j_8_ball={
-                name="8 Ball",
+                name="Magická Osmička",
                 text={
                     "{C:green}#1# in #2#{} chance for each",
                     "played {C:attention}8{} to create a",
@@ -1604,7 +1604,7 @@ return {
                 },
             },
             j_steel_joker={
-                name="Železný Žolík",
+                name="Ocelový Žolík",
                 text={
                     "Gives {X:mult,C:white} X#1# {} Mult",
                     "for each {C:attention}Steel Card",

@@ -485,13 +485,13 @@ return {
             j_astronomer={
                 name="Astronom",
                 text={
-                    "Všechny {C:planet}Planetové{} karty a",
+                    "Všechny {C:planet}Planetární{} karty a",
                     "{C:planet}Celestiálné balíčky{} v",
                     "obchodě jsou {C:attention}zdarma",
                 },
                 unlock={
                     "Objev každou",
-                    "{E:1,C:planet}Planetovou{} kartu",
+                    "{E:1,C:planet}Planetární{} kartu",
                 },
             },
             j_banner={
@@ -738,7 +738,7 @@ return {
                 text={
                     "Tento žolík získá",
                     "{X:mult,C:white} X#1# {} Mult pokaždý",
-                    "když {C:planet}Planetová{} karta je použita",
+                    "když {C:planet}Planetární{} karta je použita",
                     "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
@@ -1975,9 +1975,9 @@ return {
             gold_seal={
                 name="Zlatá Pečeť",
                 text={
-                    "Earn {C:money}$3{} when this",
-                    "card is played",
-                    "and scores",
+                    "Získáš {C:money}$3{} když je",
+                    "tadle karta zahrána",
+                    "a skóruje",
                 },
             },
             gold_sticker={
@@ -2065,7 +2065,7 @@ return {
                 name="Jumbo Celestiální Balíček",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:planet} Planetových{} karet",
+                    "{C:attention}#2#{C:planet} Planetárních{} karet",
                     "pro instantní použití",
                 },
             },
@@ -2073,7 +2073,7 @@ return {
                 name="Mega Celestiální Balíček",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:planet} Planetových{} karet",
+                    "{C:attention}#2#{C:planet} Planetárních{} karet",
                     "pro instantní použití",
                 },
             },
@@ -2081,7 +2081,7 @@ return {
                 name="Celestiální Balíček",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:planet} Planetových{} karet",
+                    "{C:attention}#2#{C:planet} Planetárních{} karet",
                     "pro instantní použití",
                 },
             },
@@ -2158,7 +2158,7 @@ return {
                 name="Fialová Pečeť",
                 text={
                     "Vytvoří {C:tarot}Tarot{} kartu",
-                    "když {C:attention}odhozen",
+                    "když {C:attention}odhozena",
                     "{C:inactive}(Musí být místo)",
                 },
             },
@@ -2173,9 +2173,9 @@ return {
             red_seal={
                 name="Červená Pečeť",
                 text={
-                    "Retrigger this",
-                    "card {C:attention}1{} time",
-                },
+                    "Zahraje kartu",
+                    "ještě {C:attention}jednou{}",
+                },e
             },
             red_sticker={
                 name="Červená Nálepka",
@@ -2832,7 +2832,7 @@ return {
                 name="Blázen",
                 text={
                     "Vytvoří poslední",
-                    "{C:tarot}Tarot{} nebo {C:planet}Planetovou{} kartu",
+                    "{C:tarot}Tarotovou{} nebo {C:planet}Planetární{} kartu",
                     "použitou tuhle hru",
                     "{s:0.8,C:tarot}Blázen{s:0.8} vynechán",
                 },
@@ -3263,7 +3263,7 @@ return {
                 },
             },
             v_tarot_tycoon={
-                name="Tarot Magnát",
+                name="Tarotový Magnát",
                 text={
                     "{C:tarot}Tarot{} cards appear",
                     "{C:attention}#1#X{} more frequently",
@@ -3302,7 +3302,7 @@ return {
             _10k="Skóruj 10,000 Žetonů v jedné ruce",
             ante_up="Dostaň se na Ante 4",
             ante_upper="Dostaň se na Ante 8",
-            astronomy="Objev každou Planetovou kartu",
+            astronomy="Objev každou Planetární kartu",
             big_hands="Have 80 or more cards in your deck",
             card_discarder="Discard at least 2500 Cards",
             card_player="Play at least 2500 Cards",
@@ -3472,7 +3472,7 @@ return {
             b_open="OTEVŘÍT",
             b_options="Nastavení",
             b_options_cap="NASTAVENÍ",
-            b_planet_cards="Planetové Karty",
+            b_planet_cards="Planetární Karty",
             b_play_cap="HRÁT",
             b_play_hand="Zahrát ruku",
             b_playbalatro="Visit playbalatro.com",
@@ -3525,7 +3525,7 @@ return {
             b_stat_jokers="Žolíci",
             b_stat_planets="Planety",
             b_stat_spectrals="Spectrály",
-            b_stat_tarots="Tarroty",
+            b_stat_tarots="Taroty",
             b_stat_vouchers="Vouchers",
             b_stats="Statistiky",
             b_tags="Tagy",

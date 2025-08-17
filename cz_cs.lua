@@ -4,16 +4,16 @@ return {
             b_abandoned={
                 name="Opuštěný Balíček",
                 text={
-                    "Začneš hru s",
-                    "žádnými {C:attention}Figurami",
-                    "ve tvém balíčku",
+                    "Začni hru s",
+                    "žádnými {C:attention}Lícovými Kartami",
+                    "v balíčku",
                 },
             },
             b_anaglyph={
                 name="Anaglyfický Balíček",
                 text={
-                    "After defeating each",
-                    "{C:attention}Boss Blind{}, gain a",
+                    "Po poražení každého",
+                    "{C:attention}Boss Blindu{}, získej",
                     "{C:attention,T:tag_double}#1#",
                 },
             },
@@ -98,12 +98,12 @@ return {
                 },
             },
             b_plasma={
-                name="Plasma Balíček",
+                name="Plasmpvá Balíček",
                 text={
-                    "Balance {C:blue}Chips{} and",
-                    "{C:red}Mult{} when calculating",
-                    "score for played hand",
-                    "{C:red}X#1#{} base Blind size",
+                    "Vyrovnej {C:blue}Žetony{} a",
+                    "{C:red}Násob{} při vypočítání",
+                    "skóre pro zahranou ruku",
+                    "{C:red}X#1#{} základní hodnota Blindu",
                 },
             },
             b_red={
@@ -121,9 +121,9 @@ return {
                 },
             },
             b_zodiac={
-                name="Zodiac Balíček",
+                name="Balíček Znamení",
                 text={
-                    "Začni s",
+                    "Začni hru s",
                     "{C:tarot,T:v_tarot_merchant}#1#{},",
                     "{C:planet,T:v_planet_merchant}#2#{},",
                     "a {C:attention,T:v_overstock_norm}#3#",

@@ -341,9 +341,9 @@ return {
                 },
             },
             e_foil={
-                name="Folie",
+                name="Fólie",
                 text={
-                    "{C:chips}+#1#{} chips",
+                    "{C:chips}+#1#{} Žetonů",
                 },
             },
             e_holo={
@@ -355,7 +355,7 @@ return {
             e_negative={
                 name="Negativní",
                 text={
-                    "{C:dark_edition}+#1#{} Joker slot",
+                    "{C:dark_edition}+#1#{} místo pro Žolíka",
                 },
             },
             e_negative_consumable={
@@ -381,7 +381,7 @@ return {
                 name="Skleněná Karta",
                 text={
                     "{X:mult,C:white} X#1# {} Mult",
-                    "{C:green}#2# / #3#{} šance na",
+                    "šance {C:green}#2# ze #3#{} na",
                     "zničení karty",
                 },
             },
@@ -396,9 +396,9 @@ return {
             m_lucky={
                 name="Štěstí Karta",
                 text={
-                    "Šance {C:green}#1# / #3#{}",
+                    "Šance {C:green}#1# z #3#{}",
                     "pro {C:mult}+#2#{} Mult",
-                    "Šance {C:green}#1# / #5#{}",
+                    "Šance {C:green}#1# z #5#{}",
                     "pro výhru {C:money}$#4#",
                 },
             },
@@ -420,7 +420,7 @@ return {
                 name="Kamená Karta",
                 text={
                     "{C:chips}+#1#{} Žetonů",
-                    "žádný rank ani barva",
+                    "žádná hodnota ani barva",
                 },
             },
             m_wild={
@@ -498,7 +498,7 @@ return {
                 name="Prapor",
                 text={
                     "{C:chips}+#1#{} Žetonů za",
-                    "každý zbýcající",
+                    "každý zbývající",
                     "{C:attention}Odhoz",
                 },
             },
@@ -611,8 +611,8 @@ return {
             j_business={
                 name="Vizitka",
                 text={
-                    "Zahrané {C:attention}figurové{} karty mají",
-                    "šanci {C:green}#1# in #2#{}",
+                    "Zahrané {C:attention}figurové{} karty",
+                    "mají šanci {C:green}#1# in #2#{}",
                     "na dostání {C:money}$2{}",
                 },
             },
@@ -1015,13 +1015,13 @@ return {
                 text={
                     "{C:red}+#1#{} Mult pokud",
                     "ruka obsahuje",
-                    "{C:attention}#2#{} nebo míň karet",
+                    "míň jak {C:attention}#2#{} karty",
                 },
             },
             j_hallucination={
                 name="Halucinace",
                 text={
-                    "Šance {C:green}#1# / #2#{} na vytvoření",
+                    "Šance {C:green}#1# ze #2#{} na vytvoření",
                     "{C:tarot}Tarot{} karty když jakýkoliv",
                     "{C:attention}Balíček vylepšení{} je otevřen",
                     "{C:inactive}(Musí být místo)",
@@ -1320,7 +1320,7 @@ return {
                 },
             },
             j_pareidolia={
-                name="Pareidolia",
+                name="Pareidolie",
                 text={
                     "Všechny karty",
                     "se berou jako",
@@ -1585,7 +1585,7 @@ return {
             j_space={
                 name="Vesmírný Žolík",
                 text={
-                    "Šance {C:green}#1# / #2#{}",
+                    "Šance {C:green}#1# ze #2#{}",
                     "na vylepšení hrané {C:attention}pokrové ruky{}",
                 },
             },
@@ -2017,7 +2017,7 @@ return {
                 },
             },
             p_arcana_jumbo={
-                name="Jumbo Arcana Balíček",
+                name="Jumbo Balíček Arkány",
                 text={
                     "Vyber si {C:attention}#1#{} z",
                     "{C:attention}#2#{C:tarot} Tarot{} karet",
@@ -2025,7 +2025,7 @@ return {
                 },
             },
             p_arcana_mega={
-                name="Mega Arcana Balíček",
+                name="Mega Balíček Arkány",
                 text={
                     "Vyber si {C:attention}#1#{} z",
                     "{C:attention}#2#{C:tarot} Tarot{} karet",
@@ -2033,7 +2033,7 @@ return {
                 },
             },
             p_arcana_normal={
-                name="Arcana Balíček",
+                name="Balíček Arkány",
                 text={
                     "Vyber si {C:attention}#1#{} z",
                     "{C:attention}#2#{C:tarot} Tarot{} karet",
@@ -2086,26 +2086,26 @@ return {
                 },
             },
             p_spectral_jumbo={
-                name="Jumbo Spectrální Balíček",
+                name="Jumbo Spektrální Balíček",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:spectral} Spectrálních{} karet",
+                    "{C:attention}#2#{C:spectral} Spektrálních{} karet",
                     "pro instantní použití",
                 },
             },
             p_spectral_mega={
-                name="Mega Spectrální Balíček",
+                name="Mega Spektrální Balíček",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:spectral} Spectrálních{} karet",
+                    "{C:attention}#2#{C:spectral} Spektrálních{} karet",
                     "pro instantní použití",
                 },
             },
             p_spectral_normal={
-                name="Spectrální Balíček",
+                name="Spektrální Balíček",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:spectral} Spectrálních{} karet",
+                    "{C:attention}#2#{C:spectral} Spektrálních{} karet",
                     "pro instantní použití",
                 },
             },
@@ -2251,7 +2251,7 @@ return {
             },
             undiscovered_tarot={
                 name="Neobjeven",
-                text={
+                text={  
                     "Kup nebo použij",
                     "tuto kartu",
                     "v neseedované hře",
@@ -2624,7 +2624,7 @@ return {
                 name="Charm Tag",
                 text={
                     "Dá zadarmo",
-                    "{C:tarot}Mega Arcana Balíček",
+                    "{C:tarot}Mega Balíček Arkány",
                 },
             },
             tag_coupon={
@@ -2661,7 +2661,7 @@ return {
                 name="Ethereal Tag",
                 text={
                     "Dá zadarmo",
-                    "{C:spectral}Spectrální Balíček",
+                    "{C:spectral}Spektrální Balíček",
                 },
             },
             tag_foil={
@@ -3347,10 +3347,10 @@ return {
             extreme_couponer="Extreme Couponer",
             flushed="Flushed",
             heads_up="Heads Up",
-            high_stakes="High Stakes",
-            legendary="Legendary",
-            low_stakes="Low Stakes",
-            mid_stakes="Mid Stakes",
+            high_stakes="Velké Sázky",
+            legendary="Legendarní",
+            low_stakes="Malé Sázky",
+            mid_stakes="Střední Sázky",
             nest_egg="Nest Egg",
             retrograde="Retrograde",
             roi="ROI",
@@ -3518,13 +3518,13 @@ return {
             b_skip_reward="Přeskočit Odměnu",
             b_sort_hand="Srovnat ruku",
             b_sounds="Zvuky",
-            b_spectral_cards="Spectrální Karty",
+            b_spectral_cards="Spektrální Karty",
             b_stake="Sázka",
             b_start_new_run="Nová hra",
             b_stat_consumables="Spotřebné",
             b_stat_jokers="Žolíci",
             b_stat_planets="Planety",
-            b_stat_spectrals="Spectrály",
+            b_stat_spectrals="Spektrály",
             b_stat_tarots="Taroty",
             b_stat_vouchers="Vouchers",
             b_stats="Statistiky",
@@ -3544,7 +3544,7 @@ return {
             k_also_applied="Also applied",
             k_ante="Ante",
             k_ante_cap="ANTE",
-            k_arcana_pack="Arcana Balíček",
+            k_arcana_pack="Balíček Arkány",
             k_balanced="Balancováno",
             k_banned_cards="Zakázané Karty",
             k_banned_tags="Zakázané Tagy",
@@ -3571,7 +3571,7 @@ return {
             k_defeated_by="Poražen od",
             k_demo_version_ex="Demo Verze!",
             k_disabled_ex="Zakázáno!",
-            k_drank_ex="Napito!",
+            k_drank_ex="Vypito!",
             k_duplicated_ex="Duplikováno!",
             k_dwarf_planet="Trpasličí Planeta",
             k_eaten_ex="Sněden!",
@@ -3637,8 +3637,8 @@ return {
             k_seed="Seed",
             k_seeded_run="Seedovaná Hra",
             k_skipped_cap="SKIPPED",
-            k_spectral="Spectrální",
-            k_spectral_pack="Spectrální Balíček",
+            k_spectral="Spektrální",
+            k_spectral_pack="Spektrální Balíček",
             k_stake="Sázka",
             k_stake_level="Úroveň Sázky",
             k_standard_pack="Standartní Balíček",
@@ -4049,9 +4049,9 @@ return {
                 "přejeď na kartu a podívej!",
             },
             fh_4_touch={
-                "Cards also earn",
-                "you some {C:blue}Chips{},",
-                "press and hold to see!",
+                "Karty také dávají",
+                "nějaké {C:blue}Žetony{},",
+                "klikni a drž a podívej!",
             },
             fh_5={
                 "Teď vyber až",
@@ -4059,9 +4059,9 @@ return {
                 "a klikni na {C:blue}'Zahrát Ruku'",
             },
             fh_5_touch={
-                "Now tap up to",
-                "{C:attention}5{} cards to play",
-                "and press {C:blue}'Play Hand'",
+                "Teď klepni na až",
+                "{C:attention}5{} karet a",
+                "zmáčkni {C:blue}'Zahrát ruku'",
             },
             fh_6={
                 "Můžeš také {C:red}'Odhodit'{} až",
@@ -4108,8 +4108,8 @@ return {
             s_2_touch={
                 "Skuz koupit tohodle",
                 "pohledného Ďábla",
-                "Drag it from the shop",
-                "into the {C:attention}'BUY'{} area",
+                "Přetáhni ho z obchodu",
+                "do {C:attention}'KOUPIT'{} zóny",
             },
             s_3={
                 "Tohle je jeden z {C:attention}#1#",
@@ -4183,10 +4183,10 @@ return {
                 "abys je vylepšil!",
             },
             sh_3_touch={
-                "Select up to {C:attention}2{} cards",
-                "in your hand and drag",
-                "the {C:tarot}Tarot{} card into the {C:attention}'USE'{}",
-                "area to enhance them!",
+                "Vyber až {C:attention}2{} karty",
+                "ve tvé ruce a přetáhni",
+                "{C:tarot}Tarot{} kartu do zóny {C:attention}'POUŽÍT'{}",
+                "abys je vylepšil",
             },
         },
         v_dictionary={

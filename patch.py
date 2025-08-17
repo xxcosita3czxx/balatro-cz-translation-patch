@@ -1,4 +1,7 @@
 import os
+import shutil
+import subprocess
+import time
 import zipfile
 import customtkinter as ctk
 import tkinter.filedialog
@@ -6,9 +9,10 @@ import re
 
 lua_entry_str = """['cz_cs'] = {font = 6, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}}"""
 
+
 def patch_language(lua_file, lua_entry_str):
-    with open(lua_file, "r") as f:
-        content = f.read()
+    with open(lua_file, "rb") as f:
+        content = f.read().decode("utf-8", errors="ignore")
 
     pattern = r"(self\.LANGUAGES\s*=\s*{)(.*?)(\n\s*})"
     def insert_at_end(match):
@@ -22,21 +26,20 @@ def patch_language(lua_file, lua_entry_str):
         
         new_entry_indented = "\n" + indent + lua_entry_str.strip()
         if body.strip():
-            new_entry_indented = "," + new_entry_indented
+            new_entry_indented = new_entry_indented
         
-        new_body = body.rstrip() + new_entry_indented + "\n"
+        new_body = body.rstrip() + new_entry_indented
         return start + new_body + end
 
     content = re.sub(pattern, insert_at_end, content, flags=re.DOTALL)
 
-    with open(lua_file, "w") as f:
+    with open(lua_file, "w",encoding="utf-8") as f:
         f.write(content)
     print(f"Added new entry to {lua_file}")
 
 def remove_patch_lua(lua_file, lua_entry_str):
-    with open(lua_file, "r") as f:
-        content = f.read()
-    
+    with open(lua_file, "rb") as f:
+        content = f.read().decode("utf-8", errors="ignore")
     # escape special regex characters in the string
     escaped_entry = re.escape(lua_entry_str.strip())
     
@@ -44,15 +47,14 @@ def remove_patch_lua(lua_file, lua_entry_str):
     pattern = rf",?\s*{escaped_entry}"
     content = re.sub(pattern, "", content, flags=re.DOTALL)
     
-    with open(lua_file, "w") as f:
+    with open(lua_file, "w",encoding="utf-8") as f:
         f.write(content)
     
     print(f"Removed the entry from {lua_file}")
 
 def check_patch_lua(lua_file, lua_entry_str):
-    with open(lua_file, "r") as f:
-        content = f.read()
-    
+    with open(lua_file, "rb") as f:
+        content = f.read().decode("utf-8", errors="ignore")
     escaped_entry = re.escape(lua_entry_str.strip())
     pattern = rf"{escaped_entry}"
     
@@ -110,29 +112,55 @@ class InstallerWindow(ctk.CTk):
 
         # ['cz_cs'] = {font = 6, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}},
         # into self.LANGUAGES in game.lua
-        
-        variables = {
-            "game_path": self.var_game_path.get(),
-            "backup": self.var_backup.get()
-        }
-        print("Collected variables:", variables)
         # You can also return or process these variables as needed
         if not self.var_game_path.get() and os.path.exists(self.var_game_path.get()):
             msg = "Please select a valid path"
+            self.status_var.set(msg)
+            return msg
+        
         # if file named balatro.exe exists, continue, else msg = isnt balatro folder
         if not os.path.exists(os.path.join(self.var_game_path.get(), "balatro.exe")):
             msg = "Selected folder is not a valid Balatro folder"
+            self.status_var.set(msg)
+            return msg
+            
+        if os.path.exists(self.var_game_path.get() + "/balatro.exe.bak"):
+            msg = "Patch already applied"
+            self.status_var.set(msg)
+            return msg
+            
+        shutil.copy(self.var_game_path.get() + "/balatro.exe", self.var_game_path.get() + "/balatro.exe.bak")
         #open balatro.exe as zip and extract game.lua and put cz_cs.lua into localization folder
         with zipfile.ZipFile(os.path.join(self.var_game_path.get(), "balatro.exe"), 'r') as zip_ref:
             extract_path = self.var_game_path.get()
             zip_ref.extract("game.lua", extract_path)
-            os.rename(
-                os.path.join(extract_path, "game.lua"),
-                os.path.join(extract_path, "game.lua.bak")
-            )
-            os.remove(os.path.join(extract_path, "game.lua"))
-            with open(os.path.join(self.var_game_path.get(), "localization", "cz_cs.lua"), 'w') as f:
-                f.write(open("cz_cs.lua", "r").read())
+            # wait until game.lua is fully extracted
+            while not os.path.exists(os.path.join(self.var_game_path.get(), "game.lua")):
+                time.sleep(0.5)
+                print("Waiting for game.lua to be extracted...")
+                
+            if check_patch_lua(self.var_game_path.get()+"/game.lua", lua_entry_str):
+                msg = "Patch already applied"
+                self.status_var.set(msg)
+                return msg
+                
+            patch_language(self.var_game_path.get()+"/game.lua",lua_entry_str=lua_entry_str)
+
+        subprocess.run([
+            "7-ZipPortable/App/7-Zip64/7z.exe", "u", self.var_game_path.get()+"/balatro.exe", self.var_game_path.get()+"/game.lua",
+        ])
+        
+        os.makedirs("localization", exist_ok=True)
+        shutil.copy("cz_cs.lua", "localization/cz_cs.lua")
+        
+        subprocess.run([
+            "7-ZipPortable/App/7-Zip64/7z.exe", "u", self.var_game_path.get()+"/balatro.exe", "localization/cz_cs.lua"
+        ])
+        os.remove(self.var_game_path.get() + "/game.lua")
+        os.remove("localization/cz_cs.lua")
+        os.rmdir("localization")
+
+        msg = "Patch applied successfully.\nYou can now open the game and select Czech."
         self.status_var.set(msg)
         return msg
 

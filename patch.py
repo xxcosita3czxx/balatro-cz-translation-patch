@@ -123,7 +123,7 @@ class InstallerWindow(ctk.CTk):
             msg = "Selected folder is not a valid Balatro folder"
             self.status_var.set(msg)
             return msg
-            
+
         if os.path.exists(self.var_game_path.get() + "/balatro.exe.bak"):
             msg = "Patch already applied"
             self.status_var.set(msg)
@@ -165,8 +165,28 @@ class InstallerWindow(ctk.CTk):
         return msg
 
     def on_restore(self):
+        
+        if not self.var_game_path.get() and os.path.exists(self.var_game_path.get()):
+            msg = "Please select a valid path"
+            self.status_var.set(msg)
+            return msg
+        
+        # if file named balatro.exe exists, continue, else msg = isnt balatro folder
+        if not os.path.exists(os.path.join(self.var_game_path.get(), "balatro.exe")):
+            msg = "Selected folder is not a valid Balatro folder"
+            self.status_var.set(msg)
+            return msg
+
         # Implement restore functionality here
-        print("Restore button clicked")
+        if not os.path.exists(self.var_game_path.get() + "/balatro.exe.bak"):
+            msg = "No backup found, please patch first, or supply backup as balatro.exe.bak in game folder"
+            self.status_var.set(msg)
+            return msg
+        os.remove(self.var_game_path.get() + "/balatro.exe")
+        shutil.copy(self.var_game_path.get() + "/balatro.exe.bak", self.var_game_path.get() + "/balatro.exe")
+        msg = "Patch restored successfully.\nYou can now open the game without the patch."
+        self.status_var.set(msg)
+        return msg
 
 if __name__ == "__main__":
     app = InstallerWindow()

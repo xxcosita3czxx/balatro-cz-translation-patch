@@ -2,11 +2,11 @@ return {
     descriptions={
         Back={
             b_abandoned={
-                name="Abandoned Deck",
+                name="Opuštěný Balíček",
                 text={
-                    "Start run with",
-                    "no {C:attention}Face Cards",
-                    "in your deck",
+                    "Začneš hru s",
+                    "žádnými {C:attention}Figurami",
+                    "ve tvém balíčku",
                 },
             },
             b_anaglyph={
@@ -20,10 +20,10 @@ return {
             b_black={
                 name="Černý Balíček",
                 text={
-                    "{C:attention}+#1#{} Joker slot",
+                    "{C:attention}+#1#{} místo pro žolíka",
                     "",
-                    "{C:blue}-#2#{} hand",
-                    "every round",
+                    "{C:blue}-#2#{} ruka",
+                    "každé kolo",
                 },
             },
             b_blue={
@@ -40,11 +40,11 @@ return {
                 },
             },
             b_checkered={
-                name="Checkered Deck",
+                name="Kostkovaný Balíček",
                 text={
                     "Začni hru s",
-                    "{C:attention}26{C:spades} Spades{} a",
-                    "{C:attention}26{C:hearts} Hearts{} v balíčku",
+                    "{C:attention}26ti{C:spades} Piky{} a",
+                    "{C:attention}26ti{C:hearts} Srdci{} v balíčku",
                 },
             },
             b_erratic={
@@ -93,8 +93,8 @@ return {
             b_painted={
                 name="Malovaný Balíček",
                 text={
-                    "{C:attention}+#1#{} hand size,",
-                    "{C:red}#2#{} Joker slot",
+                    "{C:attention}+#1#{} velikost ruky,",
+                    "{C:red}#2#{} místo pro Žolíka",
                 },
             },
             b_plasma={
@@ -123,10 +123,10 @@ return {
             b_zodiac={
                 name="Zodiac Balíček",
                 text={
-                    "Start run with",
+                    "Začni s",
                     "{C:tarot,T:v_tarot_merchant}#1#{},",
                     "{C:planet,T:v_planet_merchant}#2#{},",
-                    "and {C:attention,T:v_overstock_norm}#3#",
+                    "a {C:attention,T:v_overstock_norm}#3#",
                 },
             },
         },
@@ -276,7 +276,7 @@ return {
             bl_plant={
                 name="Rostlina",
                 text={
-                    "Všechny obličejové karty",
+                    "Všechny figurové karty",
                     "jsou oslabeny",
                 },
             },
@@ -611,7 +611,7 @@ return {
             j_business={
                 name="Vizitka",
                 text={
-                    "Zahrané {C:attention}obličejové{} karty mají",
+                    "Zahrané {C:attention}figurové{} karty mají",
                     "šanci {C:green}#1# in #2#{}",
                     "na dostání {C:money}$2{}",
                 },
@@ -1324,7 +1324,7 @@ return {
                 text={
                     "Všechny karty",
                     "se berou jako",
-                    "{C:attention}obličejové{} karty",
+                    "{C:attention}figurové{} karty",
                 },
             },
             j_perkeo={
@@ -3583,7 +3583,7 @@ return {
             k_enter_text="Zadej Text",
             k_eroded_ex="Erodoval!",
             k_extinct_ex="Vyhynul!",
-            k_face_cards="Obličejové Karty",
+            k_face_cards="Figurové Karty",
             k_game_modifiers="Modifikátory Hry",
             k_gold="Zlato",
             k_high_score_ex="Velké skóre!",

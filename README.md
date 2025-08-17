@@ -11,3 +11,7 @@
 5. tlačítko patch
 
 při jakýchkoliv problémech nebo nápadech do překladu, discord: @cosita3cz , nebo issue page
+
+## Credits
+
+Děkuji [Mozkomorovi]([https://](https://github.com/mozkomor1/balatro-czech-translation/tree/main)) za upravený m6x11plus font s háčky a čárky pro češtinu ❤️

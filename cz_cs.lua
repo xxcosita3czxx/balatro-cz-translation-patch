@@ -1394,7 +1394,7 @@ return {
                 text={
                     "Tenhle Žolík dostane {C:mult}+#1#{} Mult",
                     "za každou{C:attention} po sobě jdoucí{} ruku",
-                    "zahranou bet",
+                    "zahranou bez",
                     "{C:attention}figurové{} karty",
                     "{C:inactive}(Teď {C:mult}+#2#{C:inactive} Mult)",
                 },

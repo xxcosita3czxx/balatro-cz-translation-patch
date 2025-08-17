@@ -2,6 +2,62 @@ import os
 import zipfile
 import customtkinter as ctk
 import tkinter.filedialog
+import re
+
+lua_entry_str = """['cz_cs'] = {font = 6, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}}"""
+
+def patch_language(lua_file, lua_entry_str):
+    with open(lua_file, "r") as f:
+        content = f.read()
+
+    pattern = r"(self\.LANGUAGES\s*=\s*{)(.*?)(\n\s*})"
+    def insert_at_end(match):
+        start, body, end = match.groups()
+        
+        lines = body.splitlines()
+        if lines:
+            indent = re.match(r"(\s*)", lines[-1]).group(1)
+        else:
+            indent = "    "
+        
+        new_entry_indented = "\n" + indent + lua_entry_str.strip()
+        if body.strip():
+            new_entry_indented = "," + new_entry_indented
+        
+        new_body = body.rstrip() + new_entry_indented + "\n"
+        return start + new_body + end
+
+    content = re.sub(pattern, insert_at_end, content, flags=re.DOTALL)
+
+    with open(lua_file, "w") as f:
+        f.write(content)
+    print(f"Added new entry to {lua_file}")
+
+def remove_patch_lua(lua_file, lua_entry_str):
+    with open(lua_file, "r") as f:
+        content = f.read()
+    
+    # escape special regex characters in the string
+    escaped_entry = re.escape(lua_entry_str.strip())
+    
+    # remove it (including optional preceding comma and whitespace)
+    pattern = rf",?\s*{escaped_entry}"
+    content = re.sub(pattern, "", content, flags=re.DOTALL)
+    
+    with open(lua_file, "w") as f:
+        f.write(content)
+    
+    print(f"Removed the entry from {lua_file}")
+
+def check_patch_lua(lua_file, lua_entry_str):
+    with open(lua_file, "r") as f:
+        content = f.read()
+    
+    escaped_entry = re.escape(lua_entry_str.strip())
+    pattern = rf"{escaped_entry}"
+    
+    return bool(re.search(pattern, content, flags=re.DOTALL))
+
 
 # Installer window using CustomTkinter
 class InstallerWindow(ctk.CTk):
@@ -51,7 +107,10 @@ class InstallerWindow(ctk.CTk):
             self.var_game_path.set(folder_selected)
 
     def on_patch(self):
-        # Collect all variables when Patch button is clicked
+
+        # ['cz_cs'] = {font = 6, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}},
+        # into self.LANGUAGES in game.lua
+        
         variables = {
             "game_path": self.var_game_path.get(),
             "backup": self.var_backup.get()

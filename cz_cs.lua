@@ -29,8 +29,8 @@ return {
             b_blue={
                 name="Modrý Balíček",
                 text={
-                    "{C:blue}+#1#{} hand",
-                    "every round",
+                    "{C:blue}+#1#{} ruka",
+                    "každé kolo",
                 },
             },
             b_challenge={
@@ -42,9 +42,9 @@ return {
             b_checkered={
                 name="Checkered Deck",
                 text={
-                    "Start run with",
-                    "{C:attention}26{C:spades} Spades{} and",
-                    "{C:attention}26{C:hearts} Hearts{} in deck",
+                    "Začni hru s",
+                    "{C:attention}26{C:spades} Spades{} a",
+                    "{C:attention}26{C:hearts} Hearts{} v balíčku",
                 },
             },
             b_erratic={
@@ -153,22 +153,22 @@ return {
             bl_eye={
                 name="Oko",
                 text={
-                    "No repeat hand",
-                    "types this round",
+                    "Žádné opakování rukou",
+                    "toto kolo",
                 },
             },
             bl_final_acorn={
                 name="Amber Acorn",
                 text={
-                    "Flips and shuffles",
-                    "all Joker cards",
+                    "Otočí a zamýchá",
+                    "všechny žolíky",
                 },
             },
             bl_final_bell={
                 name="Cerulean Bell",
                 text={
-                    "Forces 1 card to",
-                    "always be selected",
+                    "Alespoň 1 karta",
+                    "je vždycky vybraná",
                 },
             },
             bl_final_heart={
@@ -181,8 +181,8 @@ return {
             bl_final_leaf={
                 name="Verdant Leaf",
                 text={
-                    "All cards debuffed",
-                    "until 1 Joker sold",
+                    "Všechny karty jsou",
+                    "oslabeny, dokud není 1 žolík prodán",
                 },
             },
             bl_final_vessel={
@@ -194,12 +194,12 @@ return {
             bl_fish={
                 name="Ryba",
                 text={
-                    "Cards drawn face down",
-                    "after each hand played",
+                    "Karty lízány lícem dolů",
+                    "po každé zahrané ruce",
                 },
             },
             bl_flint={
-                name="The Flint",
+                name="Pazourek",
                 text={
                     "Základní žetony a",
                     "Multy jsou poloviční",
@@ -215,15 +215,15 @@ return {
             bl_head={
                 name="Hlava",
                 text={
-                    "All Heart cards",
-                    "are debuffed",
+                    "Všechny Srdcové karty",
+                    "jsou oslabené",
                 },
             },
             bl_hook={
                 name="Hák",
                 text={
-                    "Odhazuje 2 náhodné",
-                    "karty za každou zahranou ruku",
+                    "Odhazuje 2 náhodné karty",
+                    "za každou zahranou ruku",
                 },
             },
             bl_house={
@@ -234,7 +234,7 @@ return {
                 },
             },
             bl_manacle={
-                name="The Manacle",
+                name="Okovy",
                 text={
                     "-1 Velikost ruky",
                 },
@@ -281,13 +281,13 @@ return {
                 },
             },
             bl_psychic={
-                name="The Psychic",
+                name="Jasnovidec",
                 text={
                     "Musíš zahrát 5 karet",
                 },
             },
             bl_serpent={
-                name="Serpent",
+                name="Had",
                 text={
                     "Za každou hru nebo odhoz,",
                     "vždycky lízni 3 karty",
@@ -388,18 +388,18 @@ return {
             m_gold={
                 name="Zlatá Karta",
                 text={
-                    "{C:money}$#1#{} if this",
-                    "card is held in hand",
-                    "at end of round",
+                    "{C:money}$#1#{} pokud tato",
+                    "karta je držena v ruce",
+                    "na konci kola",
                 },
             },
             m_lucky={
                 name="Štěstí Karta",
                 text={
-                    "{C:green}#1# in #3#{} chance",
-                    "for {C:mult}+#2#{} Mult",
-                    "{C:green}#1# in #5#{} chance",
-                    "to win {C:money}$#4#",
+                    "Šance {C:green}#1# / #3#{}",
+                    "pro {C:mult}+#2#{} Mult",
+                    "Šance {C:green}#1# / #5#{}",
+                    "pro výhru {C:money}$#4#",
                 },
             },
             m_mult={
@@ -419,12 +419,12 @@ return {
             m_stone={
                 name="Kamená Karta",
                 text={
-                    "{C:chips}+#1#{} Chips",
+                    "{C:chips}+#1#{} Žetonů",
                     "žádný rank ani barva",
                 },
             },
             m_wild={
-                name="Wild Card",
+                name="Divoká Karta",
                 text={
                     "Může být použita",
                     "jako jakákoliv barva",
@@ -446,7 +446,7 @@ return {
                 text={
                     "{C:mult}+#1#{} Mult for",
                     "each {C:attention}Joker{} card",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:red}+#2#{C:inactive} Mult)",
                 },
             },
             j_acrobat={
@@ -463,10 +463,10 @@ return {
             j_ancient={
                 name="Starobylý Žolík",
                 text={
-                    "Each played card with",
-                    "{V:1}#2#{} suit gives",
-                    "{X:mult,C:white} X#1# {} Mult when scored,",
-                    "{s:0.8}suit changes at end of round",
+                    "Každá karta s",
+                    "{V:1}#2#{} dá",
+                    "{X:mult,C:white} X#1# {} Mult",
+                    "{s:0.8} barva se mění každé kolo",
                 },
             },
             j_arrowhead={
@@ -485,36 +485,35 @@ return {
             j_astronomer={
                 name="Astronom",
                 text={
-                    "All {C:planet}Planet{} cards and",
-                    "{C:planet}Celestial Packs{} in",
-                    "the shop are {C:attention}free",
+                    "Všechny {C:planet}Planetové{} karty a",
+                    "{C:planet}Celestiálné balíčky{} v",
+                    "obchodě jsou {C:attention}zdarma",
                 },
                 unlock={
-                    "Discover every",
-                    "{E:1,C:planet}Planet{} card",
+                    "Objev každou",
+                    "{E:1,C:planet}Planetovou{} kartu",
                 },
             },
             j_banner={
                 name="Prapor",
                 text={
-                    "{C:chips}+#1#{} Chips for",
-                    "each remaining",
-                    "{C:attention}discard",
+                    "{C:chips}+#1#{} Žetonů za",
+                    "každý zbýcající",
+                    "{C:attention}Odhoz",
                 },
             },
             j_baron={
                 name="Baron",
                 text={
-                    "Each {C:attention}King{}",
-                    "held in hand",
-                    "gives {X:mult,C:white} X#1# {} Mult",
+                    "Každý {C:attention}Král{}",
+                    "v ruce dá{X:mult,C:white} X#1# {} Mult",
                 },
             },
             j_baseball={
                 name="Baseballová Karta",
                 text={
-                    "{C:green}Uncommon{} Jokers",
-                    "each give {X:mult,C:white} X#1# {} Mult",
+                    "{C:green}Neobyčejní{} Žolíci",
+                    "dávají {X:mult,C:white} X#1# {} Mult",
                 },
             },
             j_blackboard={
@@ -542,19 +541,19 @@ return {
             j_blue_joker={
                 name="Modrý Žolík",
                 text={
-                    "{C:chips}+#1#{} Chips for each",
-                    "remaining card in {C:attention}deck",
-                    "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
+                    "{C:chips}+#1#{} Žetonů za každou",
+                    "zbývající kartu v {C:attention}balíčku",
+                    "{C:inactive}(Teď {C:chips}+#2#{C:inactive} Chips)",
                 },
             },
             j_blueprint={
                 name="Blueprint",
                 text={
-                    "Copies ability of",
-                    "{C:attention}Joker{} to the right",
+                    "Kopíruje schopnost",
+                    "{C:attention}Žolíka{} vpravo",
                 },
                 unlock={
-                    "Win a run",
+                    "Vyhraj hru",
                 },
             },
             j_bootstraps={
@@ -562,7 +561,7 @@ return {
                 text={
                     "{C:mult}+#1#{} Mult for every",
                     "{C:money}$#2#{} you have",
-                    "{C:inactive}(Currently {C:mult}+#3#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:mult}+#3#{C:inactive} Mult)",
                 },
                 unlock={
                     "Have at least {E:1,C:attention}#1#",
@@ -572,8 +571,8 @@ return {
             j_brainstorm={
                 name="Brainstorm",
                 text={
-                    "Copies the ability",
-                    "of leftmost {C:attention}Joker",
+                    "Kopíruje schopnost",
+                    "{C:attention}Žolíka{} nejvíc vlevo",
                 },
                 unlock={
                     "Discard a",
@@ -585,7 +584,7 @@ return {
                 text={
                     "{C:chips}+#1#{} Chips for",
                     "each {C:money}$1{} you have",
-                    "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
+                    "{C:inactive}(Teď {C:chips}+#2#{C:inactive} Chips)",
                 },
             },
             j_burglar={
@@ -599,9 +598,9 @@ return {
             j_burnt={
                 name="Spálený Žolík",
                 text={
-                    "Upgrade the level of",
-                    "the first {C:attention}discarded",
-                    "poker hand each round",
+                    "Vylepší úroveň první",
+                    "{C:attention}odhozené",
+                    "pokrové ruky",
                 },
                 unlock={
                     "Sell a total",
@@ -610,11 +609,11 @@ return {
                 },
             },
             j_business={
-                name="Byznisová Karta",
+                name="Vizitka",
                 text={
-                    "Played {C:attention}face{} cards have",
-                    "a {C:green}#1# in #2#{} chance to",
-                    "give {C:money}$2{} when scored",
+                    "Zahrané {C:attention}obličejové{} karty mají",
+                    "šanci {C:green}#1# in #2#{}",
+                    "na dostání {C:money}$2{}",
                 },
             },
             j_caino={
@@ -623,7 +622,7 @@ return {
                     "This Joker gains {X:mult,C:white} X#1# {} Mult",
                     "when a {C:attention}face{} card",
                     "is destroyed",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
                 unlock={
                     "{E:1,s:1.3}?????",
@@ -635,7 +634,7 @@ return {
                     "This Joker gains {X:mult,C:white}X#1#{} Mult",
                     "for each card {C:attention}sold{}, resets",
                     "when {C:attention}Boss Blind{} is defeated",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_card_sharp={
@@ -664,11 +663,11 @@ return {
                     "This Joker gains {C:chips}+#1#{} Chips",
                     "per discarded {V:1}#2#{} card,",
                     "suit changes every round",
-                    "{C:inactive}(Currently {C:chips}+#3#{C:inactive} Chips)",
+                    "{C:inactive}(Teď {C:chips}+#3#{C:inactive} Chips)",
                 },
             },
             j_cavendish={
-                name="Super Banán",
+                name="Kavenda",
                 text={
                     "{X:mult,C:white} X#1# {} Mult",
                     "{C:green}#2# in #3#{} chance this",
@@ -683,7 +682,7 @@ return {
                     "destroy Joker to the right",
                     "and permanently add {C:attention}double",
                     "its sell value to this {C:red}Mult",
-                    "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:mult}+#1#{C:inactive} Mult)",
                 },
             },
             j_certificate={
@@ -703,15 +702,15 @@ return {
             j_chaos={
                 name="Klaun Chaosu",
                 text={
-                    "{C:attention}#1#{} free {C:green}Reroll",
-                    "per shop",
+                    "{C:attention}#1#{} zdarma {C:green}Přetočení",
+                    "v každém obchodě",
                 },
             },
             j_chicot={
                 name="Chichot",
                 text={
-                    "Disables effect of",
-                    "every {C:attention}Boss Blind",
+                    "Zruší efekt každého",
+                    "{C:attention}Boss Blindu",
                 },
                 unlock={
                     "{E:1,s:1.3}?????",
@@ -720,9 +719,9 @@ return {
             j_clever={
                 name="Chytrý Žolík",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} Žetonů",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_cloud_9={
@@ -731,39 +730,39 @@ return {
                     "Earn {C:money}$#1#{} for each",
                     "{C:attention}9{} in your {C:attention}full deck",
                     "at end of round",
-                    "{C:inactive}(Currently {C:money}$#2#{}{C:inactive})",
+                    "{C:inactive}(Teď {C:money}$#2#{}{C:inactive})",
                 },
             },
             j_constellation={
                 name="Souhvězdí",
                 text={
-                    "This Joker gains",
-                    "{X:mult,C:white} X#1# {} Mult every time",
-                    "a {C:planet}Planet{} card is used",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "Tento žolík získá",
+                    "{X:mult,C:white} X#1# {} Mult pokaždý",
+                    "když {C:planet}Planetová{} karta je použita",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_crafty={
-                name="Lstivý Žolík",
+                name="Šikovný Žolík",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} Žetonů",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_crazy={
                 name="Šílený Žolík",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:red}+#1#{} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_credit_card={
                 name="Kreditní Karta",
                 text={
-                    "Go up to",
-                    "{C:red}-$#1#{} in debt",
+                    "Můžeš jít až",
+                    "{C:red}-$#1#{} do dluhu",
                 },
             },
             j_delayed_grat={
@@ -777,26 +776,26 @@ return {
             j_devious={
                 name="Prohnaný Žolík",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} Žetonů",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_diet_cola={
                 name="Dietní Cola",
                 text={
-                    "Sell this card to",
-                    "create a free",
-                    "{C:attention}#1#",
+                    "Prodej tuto kartu",
+                    "abys vytvořil",
+                    "{C:attention}#1# zdarma",
                 },
             },
             j_dna={
                 name="DNA",
                 text={
-                    "If {C:attention}first hand{} of round",
-                    "has only {C:attention}1{} card, add a",
-                    "permanent copy to deck",
-                    "and draw it to {C:attention}hand",
+                    "Pokud {C:attention}první ruka{} kola",
+                    "obsahuje {C:attention}1{} kartu, přidá",
+                    "permanentní kopii do balíčku",
+                    "a lízne jí do {C:attention}ruky",
                 },
             },
             j_drivers_license={
@@ -805,7 +804,7 @@ return {
                     "{X:mult,C:white} X#1# {} Mult if you have",
                     "at least {C:attention}16{} Enhanced",
                     "cards in your full deck",
-                    "{C:inactive}(Currently {C:attention}#2#{C:inactive})",
+                    "{C:inactive}(Teď {C:attention}#2#{C:inactive})",
                 },
                 unlock={
                     "Enhance {E:1,C:attention}#1#{} cards",
@@ -813,26 +812,25 @@ return {
                 },
             },
             j_droll={
-                name="Droll Joker",
+                name="Komický Žolík",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:red}+#1#{} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_drunkard={
                 name="Opilec",
                 text={
-                    "{C:red}+#1#{} discard",
-                    "each round",
+                    "{C:red}+#1#{} odhození",
                 },
             },
             j_duo={
-                name="Duo",
+                name="Dvojka",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{X:mult,C:white} X#1# {} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
                 unlock={
                     "Win a run",
@@ -841,7 +839,7 @@ return {
                 },
             },
             j_dusk={
-                name="Dusk",
+                name="Soumrak",
                 text={
                     "Retrigger all played",
                     "cards in {C:attention}final",
@@ -862,15 +860,15 @@ return {
                     "{C:red}+#1#{} Mult for each",
                     "card below {C:attention}#3#{}",
                     "in your full deck",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:red}+#2#{C:inactive} Mult)",
                 },
             },
             j_even_steven={
-                name="Even Steven",
+                name="Sudý Štefan",
                 text={
-                    "Played cards with",
-                    "{C:attention}even{} rank give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Každá zahraná",
+                    "{C:attention}sudá{} karta dá",
+                    "{C:mult}+#1#{} Mult",
                     "{C:inactive}(10, 8, 6, 4, 2)",
                 },
             },
@@ -886,9 +884,9 @@ return {
             j_family={
                 name="Rodina",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{X:mult,C:white} X#1# {} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
                 unlock={
                     "Win a run",
@@ -899,46 +897,46 @@ return {
             j_fibonacci={
                 name="Fibonacci",
                 text={
-                    "Each played {C:attention}Ace{},",
-                    "{C:attention}2{}, {C:attention}3{}, {C:attention}5{}, or {C:attention}8{} gives",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Každé zahrané {C:attention}Eso{},",
+                    "{C:attention}2{}, {C:attention}3{}, {C:attention}5{}, nebo {C:attention}8{} dá",
+                    "{C:mult}+#1#{} Mult",
                 },
             },
             j_flash={
-                name="Flash Card",
+                name="Pomocná Kartička",
                 text={
-                    "This Joker gains {C:mult}+#1#{} Mult",
-                    "per {C:attention}reroll{} in the shop",
-                    "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
+                    "Tento žolík dostane {C:mult}+#1#{} Mult",
+                    "za každé {C:attention}přetočení{} v obchodě",
+                    "{C:inactive}(Teď {C:mult}+#2#{C:inactive} Mult)",
                 },
             },
             j_flower_pot={
                 name="Květináč",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if poker",
-                    "hand contains a",
-                    "{C:diamonds}Diamond{} card, {C:clubs}Club{} card,",
-                    "{C:hearts}Heart{} card, and {C:spades}Spade{} card",
+                    "{X:mult,C:white} X#1# {} Mult pokud",
+                    "ruka obsahuje",
+                    "{C:diamonds}Diamond{} kartu, {C:clubs}Club{} kartu,",
+                    "{C:hearts}Heart{} kartu, a {C:spades}Spade{} kartu",
                 },
                 unlock={
-                    "Reach Ante",
-                    "level {E:1,C:attention}#1#",
+                    "Dostaň se na",
+                    "Ante {E:1,C:attention}#1#",
                 },
             },
             j_fortune_teller={
-                name="Fortune Teller",
+                name="Věštec",
                 text={
                     "{C:red}+#1#{} Mult per {C:purple}Tarot{}",
                     "card used this run",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive})",
+                    "{C:inactive}(Teď {C:red}+#2#{C:inactive})",
                 },
             },
             j_four_fingers={
                 name="Čtyři Prsty",
                 text={
-                    "All {C:attention}Flushes{} and",
-                    "{C:attention}Straights{} can be",
-                    "made with {C:attention}4{} cards",
+                    "Každá {C:attention}Barva{} a",
+                    "{C:attention}Postupka{} můžou být",
+                    "{C:attention}4{} karty",
                 },
             },
             j_gift={
@@ -956,7 +954,7 @@ return {
                     "This Joker gains {X:mult,C:white} X#1# {} Mult",
                     "for every {C:attention}Glass Card",
                     "that is destroyed",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
                 unlock={
                     "Have at least {E:1,C:attention}#1#",
@@ -965,38 +963,38 @@ return {
                 },
             },
             j_gluttenous_joker={
-                name="Gluttonous Joker",
+                name="Nenasytný Žolík",
                 text={
-                    "Played cards with",
-                    "{C:clubs}#2#{} suit give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Zahrané karty s",
+                    "{C:clubs}#2#{} dají",
+                    "{C:mult}+#1#{} Mult",
                 },
             },
             j_golden={
                 name="Zlatý Žolík",
                 text={
-                    "Earn {C:money}$#1#{} at",
-                    "end of round",
+                    "Získáš {C:money}$#1#{} na",
+                    "konci kola",
                 },
             },
             j_greedy_joker={
                 name="Chamtivý Žolík",
                 text={
-                    "Played cards with",
-                    "{C:diamonds}#2#{} suit give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Zahrané karty s",
+                    "{C:diamonds}#2#{} dají",
+                    "{C:mult}+#1#{} Mult",
                 },
             },
             j_green_joker={
                 name="Zelený Žolík",
                 text={
-                    "{C:mult}+#1#{} Mult per hand played",
-                    "{C:mult}-#2#{} Mult per discard",
-                    "{C:inactive}(Currently {C:mult}+#3#{C:inactive} Mult)",
+                    "{C:mult}+#1#{} Mult za každou zahranou ruku",
+                    "{C:mult}-#2#{} Mult za každé odhození",
+                    "{C:inactive}(Teď {C:mult}+#3#{C:inactive} Mult)",
                 },
             },
             j_gros_michel={
-                name="Banán",
+                name="Velkej Mike",
                 text={
                     "{C:mult}+#1#{} Mult",
                     "{C:green}#2# in #3#{} chance this",
@@ -1007,30 +1005,30 @@ return {
             j_hack={
                 name="Hack",
                 text={
-                    "Retrigger",
-                    "each played",
-                    "{C:attention}2{}, {C:attention}3{}, {C:attention}4{}, or {C:attention}5{}",
+                    "Zahraj znovu",
+                    "každou zahranou",
+                    "{C:attention}2{}, {C:attention}3{}, {C:attention}4{}, nebo {C:attention}5{}",
                 },
             },
             j_half={
                 name="Poloviční Žolík",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "{C:attention}#2#{} or fewer cards",
+                    "{C:red}+#1#{} Mult pokud",
+                    "ruka obsahuje",
+                    "{C:attention}#2#{} nebo míň karet",
                 },
             },
             j_hallucination={
                 name="Halucinace",
                 text={
-                    "{C:green}#1# in #2#{} chance to create",
-                    "a {C:tarot}Tarot{} card when any",
-                    "{C:attention}Booster Pack{} is opened",
-                    "{C:inactive}(Must have room)",
+                    "Šance {C:green}#1# / #2#{} na vytvoření",
+                    "{C:tarot}Tarot{} karty když jakýkoliv",
+                    "{C:attention}Balíček vylepšení{} je otevřen",
+                    "{C:inactive}(Musí být místo)",
                 },
             },
             j_hanging_chad={
-                name="Hanging Chad",
+                name="Vysící Útržek",
                 text={
                     "Retrigger {C:attention}first{} played",
                     "card used in scoring",
@@ -1042,7 +1040,7 @@ return {
                 },
             },
             j_hiker={
-                name="Hiker",
+                name="Turista",
                 text={
                     "Every played {C:attention}card{}",
                     "permanently gains",
@@ -1050,12 +1048,12 @@ return {
                 },
             },
             j_hit_the_road={
-                name="Hit the Road",
+                name="Vyraž na cestu",
                 text={
                     "This Joker gains {X:mult,C:white} X#1# {} Mult",
                     "for every {C:attention}Jack{}",
                     "discarded this round",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
                 unlock={
                     "Discard {E:1,C:attention}5",
@@ -1069,15 +1067,15 @@ return {
                     "This Joker gains {X:mult,C:white} X#1# {} Mult",
                     "every time a {C:attention}playing card{}",
                     "is added to your deck",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_ice_cream={
                 name="Zmrzlina",
                 text={
-                    "{C:chips}+#1#{} Chips",
-                    "{C:chips}-#2#{} Chips for",
-                    "every hand played",
+                    "{C:chips}+#1#{} Žetonů",
+                    "{C:chips}-#2#{} Žetonů za",
+                    "každou zahranou ruku",
                 },
             },
             j_idol={
@@ -1100,7 +1098,7 @@ return {
                     "After {C:attention}#1#{} rounds,",
                     "sell this card to",
                     "{C:attention}Duplicate{} a random Joker",
-                    "{C:inactive}(Currently {C:attention}#2#{C:inactive}/#1#)",
+                    "{C:inactive}(Teď {C:attention}#2#{C:inactive}/#1#)",
                 },
                 unlock={
                     "Win a run without",
@@ -1115,24 +1113,24 @@ return {
                 },
             },
             j_jolly={
-                name="Jolly Joker",
+                name="Veselý Žolík",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:red}+#1#{} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_juggler={
                 name="Jonglér",
                 text={
-                    "{C:attention}+#1#{} hand size",
+                    "{C:attention}+#1#{} velikost ruky",
                 },
             },
             j_loyalty_card={
-                name="Loyalty Card",
+                name="Věrnostní Karta",
                 text={
-                    "{X:red,C:white} X#1# {} Mult every",
-                    "{C:attention}#2#{} hands played",
+                    "{X:red,C:white} X#1# {} Mult každých",
+                    "{C:attention}#2#{} zahraných rukou",
                     "{C:inactive}#3#",
                 },
             },
@@ -1150,36 +1148,36 @@ return {
                     "This Joker gains {X:mult,C:white} X#1# {} Mult",
                     "every time a {C:attention}Lucky{} card",
                     "{C:green}successfully{} triggers",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_lusty_joker={
-                name="Lusty Joker",
+                name="Vášnivý Žolík",
                 text={
-                    "Played cards with",
-                    "{C:hearts}#2#{} suit give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Zahrané karty s",
+                    "{C:hearts}#2#{} dají",
+                    "{C:mult}+#1#{} Mult",
                 },
             },
             j_mad={
                 name="Naštvaný Žolík",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:red}+#1#{} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_madness={
-                name="Madness",
+                name="Šílenství",
                 text={
                     "When {C:attention}Small Blind{} or {C:attention}Big Blind{}",
                     "is selected, gain {X:mult,C:white} X#1# {} Mult",
                     "and {C:attention}destroy{} a random Joker",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_mail={
-                name="Mail-In Rebate",
+                name="Sleva Poštou",
                 text={
                     "Earn {C:money}$#1#{} for each",
                     "discarded {C:attention}#2#{}, rank",
@@ -1187,7 +1185,7 @@ return {
                 },
             },
             j_marble={
-                name="Marble Joker",
+                name="Mramorový Žolík",
                 text={
                     "Adds one {C:attention}Stone{} card",
                     "to deck when",
@@ -1208,7 +1206,7 @@ return {
                 },
             },
             j_merry_andy={
-                name="Merry Andy",
+                name="Blahý Andy",
                 text={
                     "{C:red}+#1#{} discards",
                     "each round,",
@@ -1236,31 +1234,31 @@ return {
                 },
             },
             j_misprint={
-                name="Misprint",
+                name="Přetisk",
                 text={
                     "",
                 },
             },
             j_mr_bones={
-                name="Mr. Bones",
+                name="Mr. Kůstka",
                 text={
-                    "Prevents Death",
-                    "if chips scored",
-                    "are at least {C:attention}25%",
-                    "of required chips",
-                    "{S:1.1,C:red,E:2}self destructs{}",
+                    "Zruší smrt",
+                    "pokud žetony jsou",
+                    "alespoň {C:attention}25%",
+                    "potřebných žetonů",
+                    "{S:1.1,C:red,E:2}zničí se{}",
                 },
                 unlock={
-                    "Lose {C:attention,E:1}#1#{} runs",
+                    "Prohraj {C:attention,E:1}#1#{} her",
                     "{C:inactive}(#2#)",
                 },
             },
             j_mystic_summit={
                 name="Mystic Summit",
                 text={
-                    "{C:mult}+#1#{} Mult when",
-                    "{C:attention}#2#{} discards",
-                    "remaining",
+                    "{C:mult}+#1#{} Mult když",
+                    "zbývá {C:attention}#2#{}",
+                    "odhození",
                 },
             },
             j_obelisk={
@@ -1270,15 +1268,15 @@ return {
                     "per {C:attention}consecutive{} hand played",
                     "without playing your",
                     "most played {C:attention}poker hand",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_odd_todd={
-                name="Odd Todd",
+                name="Lichý Todd",
                 text={
-                    "Played cards with",
-                    "{C:attention}odd{} rank give",
-                    "{C:chips}+#1#{} Chips when scored",
+                    "Každá zahraná",
+                    "{C:attention}lichá{} karta dá",
+                    "{C:chips}+#1#{} žetonů",
                     "{C:inactive}(A, 9, 7, 5, 3)",
                 },
             },
@@ -1296,7 +1294,7 @@ return {
                 },
             },
             j_oops={
-                name="Oops! All 6s",
+                name="Ups! Všechny 6tky",
                 text={
                     "Doubles all {C:attention}listed",
                     "{C:green,E:1,S:1.1}probabilities",
@@ -1309,11 +1307,11 @@ return {
                 },
             },
             j_order={
-                name="The Order",
+                name="Řád",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{X:mult,C:white} X#1# {} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
                 unlock={
                     "Win a run",
@@ -1324,9 +1322,9 @@ return {
             j_pareidolia={
                 name="Pareidolia",
                 text={
-                    "All cards are",
-                    "considered",
-                    "{C:attention}face{} cards",
+                    "Všechny karty",
+                    "se berou jako",
+                    "{C:attention}obličejové{} karty",
                 },
             },
             j_perkeo={
@@ -1353,16 +1351,16 @@ return {
                 name="Popcorn",
                 text={
                     "{C:mult}+#1#{} Mult",
-                    "{C:mult}-#2#{} Mult per",
-                    "round played",
+                    "{C:mult}-#2#{} Mult za",
+                    "každé zahrané kolo",
                 },
             },
             j_raised_fist={
                 name="Zvedlá Pěst",
                 text={
-                    "Adds {C:attention}double{} the rank",
-                    "of {C:attention}lowest{} ranked card",
-                    "held in hand to Mult",
+                    "Přidá {C:attention}dvojnásobek{} hodnoty",
+                    "{C:attention}nejnižší{} karty",
+                    "v ruce do Multu",
                 },
             },
             j_ramen={
@@ -1379,7 +1377,7 @@ return {
                     "This Joker gains",
                     "{C:red}+#1#{} Mult when any",
                     "{C:attention}Booster Pack{} is skipped",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:red}+#2#{C:inactive} Mult)",
                 },
             },
             j_reserved_parking={
@@ -1392,13 +1390,13 @@ return {
                 },
             },
             j_ride_the_bus={
-                name="Ride the Bus",
+                name="Cesta autobusem",
                 text={
                     "This Joker gains {C:mult}+#1#{} Mult",
                     "per {C:attention}consecutive{} hand",
                     "played without a",
                     "scoring {C:attention}face{} card",
-                    "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:mult}+#2#{C:inactive} Mult)",
                 },
             },
             j_riff_raff={
@@ -1424,9 +1422,9 @@ return {
             j_rocket={
                 name="Raketa",
                 text={
-                    "Earn {C:money}$#1#{} at end of round",
-                    "Payout increases by {C:money}$#2#{}",
-                    "when {C:attention}Boss Blind{} is defeated",
+                    "Získej {C:money}$#1#{} na konci každého kola",
+                    "Zvyšuje se o {C:money}$#2#{}",
+                    "když je poražen {C:attention}Boss Blind{}",
                 },
             },
             j_rough_gem={
@@ -1448,7 +1446,7 @@ return {
                     "Gains {C:chips}+#2#{} Chips",
                     "if played hand",
                     "contains a {C:attention}Straight{}",
-                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
+                    "{C:inactive}(Teď {C:chips}+#1#{C:inactive} Chips)",
                 },
             },
             j_satellite={
@@ -1457,7 +1455,7 @@ return {
                     "Earn {C:money}$#1#{} at end of",
                     "round per unique {C:planet}Planet",
                     "card used this run",
-                    "{C:inactive}(Currently {C:money}$#2#{C:inactive})",
+                    "{C:inactive}(Teď {C:money}$#2#{C:inactive})",
                 },
                 unlock={
                     "Have {E:1,C:money}$#1#",
@@ -1473,7 +1471,7 @@ return {
                 },
             },
             j_scholar={
-                name="Scholar",
+                name="Školák",
                 text={
                     "Played {C:attention}Aces{}",
                     "give {C:chips}+#2#{} Chips",
@@ -1513,7 +1511,7 @@ return {
                 },
             },
             j_shoot_the_moon={
-                name="Shoot the Moon",
+                name="Střelte měsíc",
                 text={
                     "Each {C:attention}Queen{}",
                     "held in hand",
@@ -1543,25 +1541,25 @@ return {
                 },
             },
             j_sly={
-                name="Sly Joker",
+                name="Lstivý Žolík",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} Žetonů",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_smeared={
-                name="Smeared Joker",
+                name="Rozmazaný Žolík",
                 text={
-                    "{C:hearts}Hearts{} and {C:diamonds}Diamonds",
-                    "count as the same suit,",
-                    "{C:spades}Spades{} and {C:clubs}Clubs",
-                    "count as the same suit",
+                    "{C:hearts}Srdce{} a {C:diamonds}Káry",
+                    "se považují jako stejná barva,",
+                    "{C:spades}Piky{} a {C:clubs}Kříže",
+                    "se považují jako stejná barva",
                 },
                 unlock={
-                    "Have at least {C:attention}#1#",
-                    "{E:1,C:attention}#2#{} in",
-                    "your deck",
+                    "Měj alespoň {C:attention}#1#",
+                    "{E:1,C:attention}#2#{} ve",
+                    "svém balíčku",
                 },
             },
             j_smiley={
@@ -1573,7 +1571,7 @@ return {
                 },
             },
             j_sock_and_buskin={
-                name="Sock and Buskin",
+                name="Ponoška a Buškin",
                 text={
                     "Retrigger all",
                     "played {C:attention}face{} cards",
@@ -1587,16 +1585,15 @@ return {
             j_space={
                 name="Vesmírný Žolík",
                 text={
-                    "{C:green}#1# in #2#{} chance to",
-                    "upgrade level of",
-                    "played {C:attention}poker hand{}",
+                    "Šance {C:green}#1# / #2#{}",
+                    "na vylepšení hrané {C:attention}pokrové ruky{}",
                 },
             },
             j_splash={
                 name="Šplouch",
                 text={
-                    "Every {C:attention}played card",
-                    "counts in scoring",
+                    "Každá {C:attention}zahraná karta",
+                    "se počítá jako skórující",
                 },
             },
             j_square={
@@ -1605,16 +1602,16 @@ return {
                     "This Joker gains {C:chips}+#2#{} Chips",
                     "if played hand has",
                     "exactly {C:attention}4{} cards",
-                    "{C:inactive}(Currently {C:chips}#1#{C:inactive} Chips)",
+                    "{C:inactive}(Teď {C:chips}#1#{C:inactive} Chips)",
                 },
             },
             j_steel_joker={
-                name="Želetný Žolík",
+                name="Železný Žolík",
                 text={
                     "Gives {X:mult,C:white} X#1# {} Mult",
                     "for each {C:attention}Steel Card",
                     "in your {C:attention}full deck",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_stencil={
@@ -1623,7 +1620,7 @@ return {
                     "{X:red,C:white} X1 {} Mult for each",
                     "empty {C:attention}Joker{} slot",
                     "{s:0.8}Joker Stencil included",
-                    "{C:inactive}(Currently {X:red,C:white} X#1# {C:inactive})",
+                    "{C:inactive}(Teď {X:red,C:white} X#1# {C:inactive})",
                 },
             },
             j_stone={
@@ -1632,36 +1629,36 @@ return {
                     "Gives {C:chips}+#1#{} Chips for",
                     "each {C:attention}Stone Card",
                     "in your {C:attention}full deck",
-                    "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
+                    "{C:inactive}(Teď {C:chips}+#2#{C:inactive} Chips)",
                 },
             },
             j_stuntman={
-                name="Stuntman",
+                name="Kaskadér",
                 text={
-                    "{C:chips}+#1#{} Chips,",
-                    "{C:attention}-#2#{} hand size",
+                    "{C:chips}+#1#{} žetonů,",
+                    "{C:attention}-#2#{} velikost ruky",
                 },
                 unlock={
                     "In one hand,",
                     "earn at least",
-                    "{E:1,C:attention}#1#{} chips",
+                    "{E:1,C:attention}#1#{} žetonů",
                 },
             },
             j_supernova={
                 name="Supernova",
                 text={
-                    "Adds the number of times",
-                    "{C:attention}poker hand{} has been",
-                    "played this run to Mult",
+                    "Přídá počet {C:attention}Pokrových Rukou{}",
+                    "které byly zahrány do",
+                    "tohoto Multu",
                 },
             },
             j_superposition={
                 name="Superpozice",
                 text={
-                    "Create a {C:tarot}Tarot{} card if",
-                    "poker hand contains an",
-                    "{C:attention}Ace{} and a {C:attention}Straight{}",
-                    "{C:inactive}(Must have room)",
+                    "Vytvoří {C:tarot}Tarot{} kartu",
+                    "pokud zahraná pokrová ruka obsahuje",
+                    "{C:attention}Eso{} a {C:attention}Postupka{}",
+                    "{C:inactive}(Musí být místo)",
                 },
             },
             j_swashbuckler={
@@ -1670,7 +1667,7 @@ return {
                     "Adds the sell value",
                     "of all other owned",
                     "{C:attention}Jokers{} to Mult",
-                    "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:mult}+#1#{C:inactive} Mult)",
                 },
                 unlock={
                     "Sell a total of",
@@ -1683,7 +1680,7 @@ return {
                 text={
                     "{X:mult,C:white} X#1# {} Mult for each",
                     "{C:attention}Blind{} skipped this run",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
                 unlock={
                     "Continue a saved run",
@@ -1720,7 +1717,7 @@ return {
                 },
             },
             j_trading={
-                name="Trading Card",
+                name="Obchodní Karta",
                 text={
                     "If {C:attention}first discard{} of round",
                     "has only {C:attention}1{} card, destroy",
@@ -1730,9 +1727,9 @@ return {
             j_tribe={
                 name="Kmen",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{X:mult,C:white} X#1# {} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
                 unlock={
                     "Win a run",
@@ -1754,9 +1751,9 @@ return {
             j_trio={
                 name="Trojka",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{X:mult,C:white} X#1# {} Mult pokud",
+                    "zahraná ruka obsahuje",
+                    "{C:attention}#2#",
                 },
                 unlock={
                     "Win a run",
@@ -1765,10 +1762,10 @@ return {
                 },
             },
             j_troubadour={
-                name="Troubadour",
+                name="Trubadúr",
                 text={
-                    "{C:attention}+#1#{} hand size,",
-                    "{C:blue}-#2#{} hand each round",
+                    "{C:attention}+#1#{} velikost ruky,",
+                    "{C:blue}-#2#{} ruka každé kolo",
                 },
                 unlock={
                     "Win {C:attention,E:1}#1#{} consecutive",
@@ -1782,7 +1779,7 @@ return {
                     "This Joker gains {C:mult}+#1#{} Mult",
                     "if played hand contains",
                     "a {C:attention}#2#",
-                    "{C:inactive}(Currently {C:red}+#3#{C:inactive} Mult)",
+                    "{C:inactive}(Teď {C:red}+#3#{C:inactive} Mult)",
                 },
             },
             j_turtle_bean={
@@ -1807,7 +1804,7 @@ return {
                     "This Joker gains {X:mult,C:white} X#1# {} Mult",
                     "per scoring {C:attention}Enhanced card{} played,",
                     "removes card {C:attention}Enhancement",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
             },
             j_walkie_talkie={
@@ -1819,12 +1816,12 @@ return {
                 },
             },
             j_wee={
-                name="Wee Žolík",
+                name="Prcek",
                 text={
                     "This Joker gains",
                     "{C:chips}+#2#{} Chips when each",
                     "played {C:attention}2{} is scored",
-                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
+                    "{C:inactive}(Teď {C:chips}+#1#{C:inactive} Chips)",
                 },
                 unlock={
                     "Win a run in {E:1,C:attention}#1#",
@@ -1832,19 +1829,19 @@ return {
                 },
             },
             j_wily={
-                name="Wily Joker",
+                name="Mazaný Žolík",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} Žetonů",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
             j_wrathful_joker={
                 name="Hněvivý Žolík",
                 text={
-                    "Played cards with",
-                    "{C:spades}#2#{} suit give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Zahrané karty s",
+                    "{C:spades}#2#{} dají",
+                    "{C:mult}+#1#{} Mult",
                 },
             },
             j_yorick={
@@ -1853,18 +1850,18 @@ return {
                     "This Joker gains",
                     "{X:mult,C:white} X#1# {} Mult every {C:attention}#2#{C:inactive} [#3#]{}",
                     "cards discarded",
-                    "{C:inactive}(Currently {X:mult,C:white} X#4# {C:inactive} Mult)",
+                    "{C:inactive}(Teď {X:mult,C:white} X#4# {C:inactive} Mult)",
                 },
                 unlock={
                     "{E:1,s:1.3}?????",
                 },
             },
             j_zany={
-                name="Zany Joker",
+                name="Bláznivý Žolík",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:red}+#1#{} Mult",
+                    "pokud zahraná ruka",
+                    "obsahuje {C:attention}#2#",
                 },
             },
         },
@@ -1896,12 +1893,12 @@ return {
             },
             card_chips={
                 text={
-                    "{C:chips}+#1#{} chips",
+                    "{C:chips}+#1#{} žetonů",
                 },
             },
             card_extra_chips={
                 text={
-                    "{C:chips}+#1#{} extra chips",
+                    "{C:chips}+#1#{} extra žetonů",
                 },
             },
             challenge_locked={
@@ -1914,22 +1911,22 @@ return {
                 },
             },
             debuffed_default={
-                name="Debuffed",
+                name="Oslaben",
                 text={
-                    "All abilities",
-                    "are disabled",
+                    "Všechny schopnosti",
+                    "jsou vyplé",
                 },
             },
             debuffed_playing_card={
-                name="Debuffed",
+                name="Oslaben",
                 text={
-                    "Scores no chips",
-                    "and all abilities",
-                    "are disabled",
+                    "Nedává žádné žetony",
+                    "a všechny schopnosti",
+                    "jsou vyplé",
                 },
             },
             deck_locked_discover={
-                name="Locked",
+                name="Zamčený",
                 text={
                     "Discover at least",
                     "{C:attention}#1#{} items from",
@@ -1937,15 +1934,15 @@ return {
                 },
             },
             deck_locked_stake={
-                name="Locked",
+                name="Zamčený",
                 text={
-                    "Win a run with any",
+                    "Vyhraj hru s",
                     "deck on at least",
                     "{V:1}#1#{} difficulty",
                 },
             },
             deck_locked_win={
-                name="Locked",
+                name="Zamčený",
                 text={
                     "Win a run with",
                     "{C:attention}#1#{}",
@@ -1953,14 +1950,14 @@ return {
                 },
             },
             demo_locked={
-                name="Locked",
+                name="Zamčený",
                 text={
                     "Not available",
                     "in this demo",
                 },
             },
             demo_shop_locked={
-                name="Locked",
+                name="Zamčený",
                 text={
                     "Card from {C:attention}Jimbo's",
                     "personal collection,",
@@ -2022,118 +2019,118 @@ return {
             p_arcana_jumbo={
                 name="Jumbo Arcana Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:tarot} Tarot{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:tarot} Tarot{} karet",
+                    "pro instantní použití",
                 },
             },
             p_arcana_mega={
                 name="Mega Arcana Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:tarot} Tarot{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:tarot} Tarot{} karet",
+                    "pro instantní použití"
                 },
             },
             p_arcana_normal={
                 name="Arcana Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:tarot} Tarot{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:tarot} Tarot{} karet",
+                    "pro instantní použití"
                 },
             },
             p_buffoon_jumbo={
                 name="Jumbo Buffoon Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:joker} Joker{} cards",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:joker} Žolíků{}",
                 },
             },
             p_buffoon_mega={
                 name="Mega Buffoon Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:joker} Joker{} cards",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:joker} Žolíků{}",
                 },
             },
             p_buffoon_normal={
                 name="Buffoon Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:joker} Joker{} cards",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:joker} Žolíků{}",
                 },
             },
             p_celestial_jumbo={
                 name="Jumbo Celestiální Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:planet} Planet{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:planet} Planetových{} karet",
+                    "pro instantní použití",
                 },
             },
             p_celestial_mega={
                 name="Mega Celestiální Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:planet} Planet{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:planet} Planetových{} karet",
+                    "pro instantní použití",
                 },
             },
             p_celestial_normal={
                 name="Celestiální Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:planet} Planet{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:planet} Planetových{} karet",
+                    "pro instantní použití",
                 },
             },
             p_spectral_jumbo={
                 name="Jumbo Spectrální Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:spectral} Spectral{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:spectral} Spectrálních{} karet",
+                    "pro instantní použití",
                 },
             },
             p_spectral_mega={
                 name="Mega Spectrální Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:spectral} Spectral{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:spectral} Spectrálních{} karet",
+                    "pro instantní použití",
                 },
             },
             p_spectral_normal={
                 name="Spectrální Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:spectral} Spectral{} cards to",
-                    "be used immediately",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:spectral} Spectrálních{} karet",
+                    "pro instantní použití",
                 },
             },
             p_standard_jumbo={
                 name="Jumbo Standardtní Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:attention} Playing{} cards to",
-                    "add to your deck",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:attention} Herních{} karet",
+                    "které se přidají do tvého balíčku",
                 },
             },
             p_standard_mega={
                 name="Mega Standardtní Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:attention} Playing{} cards to",
-                    "add to your deck",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:attention} Herních{} karet",
+                    "které se přidají do tvého balíčku",
                 },
             },
             p_standard_normal={
                 name="Standardtní Balíček",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:attention} Playing{} cards to",
-                    "add to your deck",
+                    "Vyber si {C:attention}#1#{} z",
+                    "{C:attention}#2#{C:attention} Herních{} karet",
+                    "které se přidají do tvého balíčku",
                 },
             },
             perishable={
@@ -2154,15 +2151,15 @@ return {
             },
             playing_card={
                 text={
-                    " {C:light_black}#1# of {V:1}#2# ",
+                    " {C:light_black}#1# {V:1}#2# ",
                 },
             },
             purple_seal={
                 name="Fialová Pečeť",
                 text={
-                    "Creates a {C:tarot}Tarot{} card",
-                    "when {C:attention}discarded",
-                    "{C:inactive}(Must have room)",
+                    "Vytvoří {C:tarot}Tarot{} kartu",
+                    "když {C:attention}odhozen",
+                    "{C:inactive}(Musí být místo)",
                 },
             },
             purple_sticker={
@@ -2204,61 +2201,61 @@ return {
             undiscovered_booster={
                 name="Neobjeven",
                 text={
-                    "Open this pack",
-                    "in an unseeded run",
-                    "to learn what it does",
+                    "Otevři tento balíček",
+                    "v neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             undiscovered_edition={
                 name="Neobjeven",
                 text={
-                    "Find this edition",
-                    "in an unseeded run",
-                    "to learn what it does",
+                    "Najdi tuto edici",
+                    "v neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             undiscovered_joker={
                 name="Neobjeven",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Kup nebo použij",
+                    "tuto kartu v",
+                    "neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             undiscovered_planet={
                 name="Neobjeven",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Kup nebo použij",
+                    "tuto kartu v",
+                    "neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             undiscovered_spectral={
                 name="Neobjeven",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Kup nebo použij",
+                    "tuto kartu v",
+                    "neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             undiscovered_tag={
                 name="Neobjeven",
                 text={
-                    "Use this tag in",
-                    "an unseeded run to",
-                    "learn what it does",
+                    "Použij tento tag",
+                    "v neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             undiscovered_tarot={
                 name="Neobjeven",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Kup nebo použij",
+                    "tuto kartu",
+                    "v neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             undiscovered_voucher={
@@ -2273,9 +2270,8 @@ return {
             white_sticker={
                 name="Bílá Nálepka",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}White",
-                    "{C:attention}Stake{} difficulty",
+                    "Použil tohoto Žolíka",
+                    "pro vyhrání {C:attention}Bílé Sázky{}",
                 },
             },
             wip_locked={
@@ -2290,7 +2286,7 @@ return {
             c_ceres={
                 name="Ceres",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2299,7 +2295,7 @@ return {
             c_earth={
                 name="Země",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2308,7 +2304,7 @@ return {
             c_eris={
                 name="Eris",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2317,7 +2313,7 @@ return {
             c_jupiter={
                 name="Jupiter",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2326,7 +2322,7 @@ return {
             c_mars={
                 name="Mars",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2335,7 +2331,7 @@ return {
             c_mercury={
                 name="Merkur",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2344,7 +2340,7 @@ return {
             c_neptune={
                 name="Neptun",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2353,7 +2349,7 @@ return {
             c_planet_x={
                 name="Planeta X",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2362,7 +2358,7 @@ return {
             c_pluto={
                 name="Pluto",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2371,7 +2367,7 @@ return {
             c_saturn={
                 name="Saturn",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2380,7 +2376,7 @@ return {
             c_uranus={
                 name="Uran",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2389,7 +2385,7 @@ return {
             c_venus={
                 name="Venuše",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
+                    "{S:0.8}({S:0.8,V:1}úrov.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult a",
                     "{C:chips}+#4#{} žetonů",
@@ -2416,9 +2412,9 @@ return {
             c_black_hole={
                 name="Černá Díra",
                 text={
-                    "Upgrade every",
-                    "{C:legendary,E:1}poker hand",
-                    "by {C:attention}1{} level",
+                    "Vylepší každou",
+                    "{C:legendary,E:1}pokrovou ruku",
+                    "o {C:attention}1{} Úroveň",
                 },
             },
             c_cryptid={
@@ -2613,22 +2609,22 @@ return {
             tag_boss={
                 name="Boss Tag",
                 text={
-                    "Rerolls the",
+                    "Změní",
                     "{C:attention}Boss Blind",
                 },
             },
             tag_buffoon={
                 name="Buffoon Tag",
                 text={
-                    "Gives a free",
-                    "{C:attention}Mega Buffoon Pack",
+                    "Dá zadarmo",
+                    "{C:attention}Mega Buffoon Balíček",
                 },
             },
             tag_charm={
                 name="Charm Tag",
                 text={
-                    "Gives a free",
-                    "{C:tarot}Mega Arcana Pack",
+                    "Dá zadarmo",
+                    "{C:tarot}Mega Arcana Balíček",
                 },
             },
             tag_coupon={
@@ -2647,7 +2643,7 @@ return {
                 },
             },
             tag_double={
-                name="Double Tag",
+                name="Dvojitý Tag",
                 text={
                     "Gives a copy of the",
                     "next selected {C:attention}Tag{}",
@@ -2655,7 +2651,7 @@ return {
                 },
             },
             tag_economy={
-                name="Economy Tag",
+                name="Ekonomský Tag",
                 text={
                     "Doubles your money",
                     "{C:inactive}(Max of {C:money}$#1#{C:inactive})",
@@ -2664,12 +2660,12 @@ return {
             tag_ethereal={
                 name="Ethereal Tag",
                 text={
-                    "Gives a free",
-                    "{C:spectral}Spectral Pack",
+                    "Dá zadarmo",
+                    "{C:spectral}Spectrální Balíček",
                 },
             },
             tag_foil={
-                name="Foil Tag",
+                name="Fóliový Tag",
                 text={
                     "Next base edition shop",
                     "Joker is free and",
@@ -2677,7 +2673,7 @@ return {
                 },
             },
             tag_garbage={
-                name="Garbage Tag",
+                name="Odpadový Tag",
                 text={
                     "Gives {C:money}$#1#{} per unused",
                     "{C:red}discard{} this run",
@@ -2718,7 +2714,7 @@ return {
             tag_meteor={
                 name="Meteor Tag",
                 text={
-                    "Gives a free",
+                    "Dá zadarmo",
                     "{C:planet}Mega Celestial Pack",
                 },
             },
@@ -2733,8 +2729,8 @@ return {
             tag_orbital={
                 name="Orbital Tag",
                 text={
-                    "Upgrade {C:attention}#1#",
-                    "by {C:attention}#2# levels",
+                    "Vylepší {C:attention}#1#",
+                    "o {C:attention}#2# Úroveň",
                 },
             },
             tag_polychrome={
@@ -2763,8 +2759,8 @@ return {
             tag_standard={
                 name="Standard Tag",
                 text={
-                    "Gives a free",
-                    "{C:attention}Mega Standard Pack",
+                    "Dá zadarmo",
+                    "{C:attention}Mega Standartní Balíček",
                 },
             },
             tag_top_up={
@@ -2792,7 +2788,7 @@ return {
         },
         Tarot={
             c_chariot={
-                name="The Chariot",
+                name="Válečný Vůz",
                 text={
                     "Enhances {C:attention}#1#{} selected",
                     "card into a",
@@ -2811,34 +2807,34 @@ return {
             c_devil={
                 name="Ďábel",
                 text={
-                    "Enhances {C:attention}#1#{} selected",
-                    "card into a",
+                    "Přemění {C:attention}#1#{} vybranou",
+                    "kartu na",
                     "{C:attention}#2#",
                 },
             },
             c_emperor={
                 name="Císař",
                 text={
-                    "Creates up to {C:attention}#1#",
-                    "random {C:tarot}Tarot{} cards",
-                    "{C:inactive}(Must have room)",
+                    "Vytvoří až {C:attention}#1#",
+                    "náhodné {C:tarot}Tarot{} karty",
+                    "{C:inactive}(Musí být místo)",
                 },
             },
             c_empress={
                 name="Císařovna",
                 text={
-                    "Enhances {C:attention}#1#",
-                    "selected cards to",
-                    "{C:attention}#2#s",
+                    "Přemění {C:attention}#1#",
+                    "vybrané karty na",
+                    "{C:attention}#2#",
                 },
             },
             c_fool={
                 name="Blázen",
                 text={
-                    "Creates the last",
-                    "{C:tarot}Tarot{} or {C:planet}Planet{} card",
-                    "used during this run",
-                    "{s:0.8,C:tarot}The Fool{s:0.8} excluded",
+                    "Vytvoří poslední",
+                    "{C:tarot}Tarot{} nebo {C:planet}Planetovou{} kartu",
+                    "použitou tuhle hru",
+                    "{s:0.8,C:tarot}Blázen{s:0.8} vynechán",
                 },
             },
             c_hanged_man={
@@ -2849,7 +2845,7 @@ return {
                 },
             },
             c_heirophant={
-                name="The Hierophant",
+                name="Velekněz",
                 text={
                     "Enhances {C:attention}#1#",
                     "selected cards to",
@@ -2857,7 +2853,7 @@ return {
                 },
             },
             c_hermit={
-                name="Hermit",
+                name="Poustevník",
                 text={
                     "Doubles money",
                     "{C:inactive}(Max of {C:money}$#1#{C:inactive})",
@@ -2941,7 +2937,7 @@ return {
                     "Gives the total sell",
                     "value of all current",
                     "Jokers {C:inactive}(Max of {C:money}$#1#{C:inactive})",
-                    "{C:inactive}(Currently {C:money}$#2#{C:inactive})",
+                    "{C:inactive}(Teď {C:money}$#2#{C:inactive})",
                 },
             },
             c_tower={
@@ -2972,7 +2968,7 @@ return {
         },
         Voucher={
             v_antimatter={
-                name="Antimatter",
+                name="Antihmota",
                 text={
                     "{C:dark_edition}+1{} Joker Slot",
                 },
@@ -3010,7 +3006,7 @@ return {
                 },
             },
             v_glow_up={
-                name="Glow Up",
+                name="Rosviť se",
                 text={
                     "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, and",
                     "{C:dark_edition}Polychrome{} cards",
@@ -3040,7 +3036,7 @@ return {
                 },
             },
             v_hone={
-                name="Hone",
+                name="Vylepšit",
                 text={
                     "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, and",
                     "{C:dark_edition}Polychrome{} cards",
@@ -3124,7 +3120,7 @@ return {
                 },
             },
             v_omen_globe={
-                name="Omen Globe",
+                name="Glóbus předzvěsti",
                 text={
                     "{C:spectral}Spectral{} cards may",
                     "appear in any of",
@@ -3138,14 +3134,14 @@ return {
                 },
             },
             v_overstock_norm={
-                name="Overstock",
+                name="Přeplněno",
                 text={
                     "{C:attention}+1{} card slot",
                     "available in shop",
                 },
             },
             v_overstock_plus={
-                name="Overstock Plus",
+                name="Přeplněno Plus",
                 text={
                     "{C:attention}+1{} card slot",
                     "available in shop",
@@ -3185,7 +3181,7 @@ return {
                 },
             },
             v_planet_merchant={
-                name="Planet Merchant",
+                name="Planetární Obchodník",
                 text={
                     "{C:planet}Planet{} cards appear",
                     "{C:attention}#1#X{} more frequently",
@@ -3193,7 +3189,7 @@ return {
                 },
             },
             v_planet_tycoon={
-                name="Planet Tycoon",
+                name="Planetární Magnát",
                 text={
                     "{C:planet}Planet{} cards appear",
                     "{C:attention}#1#X{} more frequently",
@@ -3239,7 +3235,7 @@ return {
                 },
             },
             v_retcon={
-                name="Retcon",
+                name="Zpětné Přepsání",
                 text={
                     "Reroll Boss Blind",
                     "{C:attention}unlimited{} times,",
@@ -3259,7 +3255,7 @@ return {
                 },
             },
             v_tarot_merchant={
-                name="Tarot Merchant",
+                name="Tarotový Obchodník",
                 text={
                     "{C:tarot}Tarot{} cards appear",
                     "{C:attention}#1#X{} more frequently",
@@ -3267,7 +3263,7 @@ return {
                 },
             },
             v_tarot_tycoon={
-                name="Tarot Tycoon",
+                name="Tarot Magnát",
                 text={
                     "{C:tarot}Tarot{} cards appear",
                     "{C:attention}#1#X{} more frequently",
@@ -3290,7 +3286,7 @@ return {
                 },
             },
             v_wasteful={
-                name="Wasteful",
+                name="Plýtvání",
                 text={
                     "Permanently",
                     "gain {C:red}+#1#{} discard",
@@ -3301,12 +3297,12 @@ return {
     },
     misc={
         achievement_descriptions={
-            _100000k="Score 100,000,000 Chips in a single hand",
-            _1000k="Score 1,000,000 Chips in a single hand",
-            _10k="Score 10,000 Chips in a single hand",
-            ante_up="Reach Ante 4",
-            ante_upper="Reach Ante 8",
-            astronomy="Discover every Planet card",
+            _100000k="Skóruj 100,000,000 Žetonů v jediné ruce",
+            _1000k="Skóruj 1,000,000 Žetonů v jedné ruce",
+            _10k="Skóruj 10,000 Žetonů v jedné ruce",
+            ante_up="Dostaň se na Ante 4",
+            ante_upper="Dostaň se na Ante 8",
+            astronomy="Objev každou Planetovou kartu",
             big_hands="Have 80 or more cards in your deck",
             card_discarder="Discard at least 2500 Cards",
             card_player="Play at least 2500 Cards",
@@ -3363,7 +3359,7 @@ return {
             rule_breaker="Rule Breaker",
             shattered="Shattered",
             speedrunner="Speedrunner",
-            tiny_hands="Tiny Hands",
+            tiny_hands="Malé ruce",
             you_get_what_you_get="You Get What You Get",
         },
         blind_states={
@@ -3375,30 +3371,30 @@ return {
             Upcoming="Další",
         },
         challenge_names={
-            c_blast_off_1="Blast Off",
+            c_blast_off_1="Výstřel",
             c_bram_poker_1="Bram Poker",
-            c_city_1="15 Minute City",
+            c_city_1="15ti Minutové Město",
             c_cruelty_1="Cruelty",
-            c_double_nothing_1="Double or Nothing",
+            c_double_nothing_1="Dvojnásobek nebo Nic",
             c_five_card_1="Five-Card Draw",
-            c_fragile_1="Fragile",
-            c_golden_needle_1="Golden Needle",
-            c_inflation_1="Inflation",
-            c_jokerless_1="Jokerless",
+            c_fragile_1="Křehké",
+            c_golden_needle_1="Zlatá jehla",
+            c_inflation_1="Inflace",
+            c_jokerless_1="Bez žolíka",
             c_knife_1="On a Knife's Edge",
             c_luxury_1="Luxury Tax",
             c_mad_world_1="Mad World",
-            c_medusa_1="Medusa",
-            c_monolith_1="Monolith",
+            c_medusa_1="Medůza",
+            c_monolith_1="Monolit",
             c_non_perishable_1="Non-Perishable",
-            c_omelette_1="The Omelette",
-            c_rich_1="Rich get Richer",
+            c_omelette_1="Omeleta",
+            c_rich_1="Bohatý ještě bohatším",
             c_typecast_1="Typecast",
-            c_xray_1="X-ray Vision",
+            c_xray_1="X-ray Viděíní",
         },
         collabs={
             Clubs={
-                ["1"]="Default",
+                ["1"]="Základ",
                 ["2"]="Vampire Survivors",
                 ["3"]="Slay the Spire",
                 ["4"]="Potion Craft",
@@ -3407,7 +3403,7 @@ return {
                 ["7"]="Dead by Daylight",
             },
             Diamonds={
-                ["1"]="Default",
+                ["1"]="Základ",
                 ["2"]="Dave the Diver",
                 ["3"]="Stardew Valley",
                 ["4"]="Enter the Gungeon",
@@ -3416,7 +3412,7 @@ return {
                 ["7"]="Rust",
             },
             Hearts={
-                ["1"]="Default",
+                ["1"]="Základ",
                 ["2"]="Among Us",
                 ["3"]="The Binding of Isaac",
                 ["4"]="Cult of the Lamb",
@@ -3425,7 +3421,7 @@ return {
                 ["7"]="Bugsnax",
             },
             Spades={
-                ["1"]="Default",
+                ["1"]="Základ",
                 ["2"]="The Witcher",
                 ["3"]="Cyberpunk 2077",
                 ["4"]="Shovel Knight",
@@ -3440,7 +3436,7 @@ return {
             b_and_use="& POUŽÍT",
             b_back="Zpět",
             b_blinds="Blindy",
-            b_booster_packs="Booster Balíčky",
+            b_booster_packs="Balíčky Vylepšení",
             b_buy="KOUPIT",
             b_cash_out="Vybrat Peníze",
             b_challenges="Výzvy",
@@ -3448,24 +3444,24 @@ return {
             b_collection_cap="KOLEKCE",
             b_continue="Pokračovat",
             b_copy="Kopírovat",
-            b_copy_seed="Copy Seed",
-            b_create_profile="Create Profile",
-            b_credits="Credits",
+            b_copy_seed="Kopírovat Seed",
+            b_create_profile="Vytvořit Profil",
+            b_credits="Titulky",
             b_current_profile="Tento Profil",
             b_customize_deck="Upravit Balíček",
             b_deck="Balíček",
             b_decks="Balíčky",
             b_delete_profile="Smazat Profil",
-            b_discard="Discard",
+            b_discard="Odhodit",
             b_editions="Edice",
             b_endless="Nekonečný Mód",
-            b_enhanced_cards="Enhanced Cards",
-            b_full_deck="Full Deck",
+            b_enhanced_cards="Vylepšené Karty",
+            b_full_deck="Plný Balíček",
             b_high_contrast_cards="High Contrast Cards",
-            b_how_to_play="How to play",
+            b_how_to_play="Jak hrát",
             b_imagery="Imagery",
             b_jokers="Žolíci",
-            b_load_profile="Load Profile",
+            b_load_profile="Nahrát Profil",
             b_main_menu="Hlavní Menu",
             b_music="Hudba",
             b_new_challenge="Start New Challenge",
@@ -3482,10 +3478,10 @@ return {
             b_playbalatro="Visit playbalatro.com",
             b_poker_hands="Pokrové ruce",
             b_quit_cap="UKONČIT",
-            b_redeem="REDEEM",
+            b_redeem="UPLATNIT",
             b_reduced_motion="Reduced Motion",
-            b_remaining="Remaining",
-            b_reroll_boss="Reroll Boss",
+            b_remaining="Zbývající",
+            b_reroll_boss="Přetočit Bosse",
             b_reset_profile="Resetovat Profil",
             b_restrictions="Restrictions",
             b_retry="Skusit Znovu",
@@ -3498,7 +3494,7 @@ return {
             b_sell="PRODAT",
             b_set_CRT="CRT",
             b_set_CRT_bloom="CRT Bloom",
-            b_set_apply="Apply",
+            b_set_apply="Aplikovat",
             b_set_audio="Zvuk",
             b_set_crash_reports="Crash Reports",
             b_set_game="Hra",
@@ -3506,7 +3502,7 @@ return {
             b_set_gamespeed="Rychlost Hry",
             b_set_graphics="Grafika",
             b_set_master_vol="Hlasitost",
-            b_set_monitor="Display Monitor",
+            b_set_monitor="Displej",
             b_set_music_vol="Hlasitost Hudby",
             b_set_pixel_smoothing="Pixel Art Smoothing",
             b_set_play_discard_pos="Play/Discard Button Position",
@@ -3515,20 +3511,20 @@ return {
             b_set_shadows="Shadows",
             b_set_vibration="Vibrace",
             b_set_video="Video",
-            b_set_windowmode="Window Mode",
+            b_set_windowmode="Režim Okna",
             b_settings="Nastavení",
             b_skip="Přeskočit",
             b_skip_blind="Přeskočit Blind",
             b_skip_reward="Přeskočit Odměnu",
-            b_sort_hand="Sort Hand",
-            b_sounds="Sounds",
-            b_spectral_cards="Spectral Cards",
-            b_stake="Stake",
+            b_sort_hand="Srovnat ruku",
+            b_sounds="Zvuky",
+            b_spectral_cards="Spectrální Karty",
+            b_stake="Sázka",
             b_start_new_run="Nová hra",
             b_stat_consumables="Spotřebné",
             b_stat_jokers="Žolíci",
             b_stat_planets="Planety",
-            b_stat_spectrals="Spectrals",
+            b_stat_spectrals="Spectrály",
             b_stat_tarots="Tarroty",
             b_stat_vouchers="Vouchers",
             b_stats="Statistiky",
@@ -3541,7 +3537,7 @@ return {
             k_aces="Esa",
             k_achievement="Achievement",
             k_achievements_disabled="Achievements Disabled",
-            k_active="active",
+            k_active="aktvní",
             k_active_ex="Aktivní!",
             k_again_ex="Znovu!",
             k_all_hands="Všechny Ruce",
@@ -3549,65 +3545,65 @@ return {
             k_ante="Ante",
             k_ante_cap="ANTE",
             k_arcana_pack="Arcana Balíček",
-            k_balanced="Balanced",
-            k_banned_cards="Banned Cards",
-            k_banned_tags="Banned Tags",
+            k_balanced="Balancováno",
+            k_banned_cards="Zakázané Karty",
+            k_banned_tags="Zakázané Tagy",
             k_base_cap="BASE",
             k_base_cards="Základní Karty",
             k_best_hand="Nejlepší Ruka",
-            k_booster="Booster",
+            k_booster="Vylepšení",
             k_buffoon_pack="Buffoon Pack",
-            k_cap_consumables="CONSUMABLES",
-            k_card_stats="Card Stats",
+            k_cap_consumables="SPOTŘEBNÉ",
+            k_card_stats="Statistiky Karet",
             k_celestial_pack="Celestiální Balíček",
-            k_challenge_mode="Challenge Mode",
-            k_challenges="Challenges",
+            k_challenge_mode="Režim Výzvy",
+            k_challenges="Výzvy",
             k_choose="Vyber",
             k_collection="Kolekce",
-            k_common="Normální",
-            k_compatible="compatible",
+            k_common="Obyčejné",
+            k_compatible="kompatibilní",
             k_copied_ex="Zkopírováno!",
-            k_custom_rules="Custom Rules",
-            k_daily_run="Daily Run",
-            k_debuffed="Debuffed",
+            k_custom_rules="Vlastní Pravidla",
+            k_daily_run="Denní Hra",
+            k_debuffed="Oslaben",
             k_deck="Balíček",
             k_deck_stake_wins="Deck Stake Wins",
-            k_defeated_by="Defeated By",
-            k_demo_version_ex="Demo Version!",
-            k_disabled_ex="Disabled!",
-            k_drank_ex="Drank!",
-            k_duplicated_ex="Duplicated!",
+            k_defeated_by="Poražen od",
+            k_demo_version_ex="Demo Verze!",
+            k_disabled_ex="Zakázáno!",
+            k_drank_ex="Napito!",
+            k_duplicated_ex="Duplikováno!",
             k_dwarf_planet="Trpasličí Planeta",
-            k_eaten_ex="Eaten!",
+            k_eaten_ex="Sněden!",
             k_edition="Edice",
             k_effective="Efektivní",
-            k_empty_caps="EMPTY",
-            k_enter_name="Enter Name",
-            k_enter_seed="Enter Seed",
-            k_enter_text="Enter Text",
-            k_eroded_ex="Eroded!",
-            k_extinct_ex="Extinct!",
-            k_face_cards="Face Cards",
-            k_game_modifiers="Game Modifiers",
-            k_gold="Gold",
+            k_empty_caps="PRÁZDNÝ",
+            k_enter_name="Zadej Jméno",
+            k_enter_seed="Zadej Seed",
+            k_enter_text="Zadej Text",
+            k_eroded_ex="Erodoval!",
+            k_extinct_ex="Vyhynul!",
+            k_face_cards="Obličejové Karty",
+            k_game_modifiers="Modifikátory Hry",
+            k_gold="Zlato",
             k_high_score_ex="Velké skóre!",
-            k_hud_discards="Discards",
+            k_hud_discards="Odhozy",
             k_hud_hands="Ruce",
-            k_incompatible="incompatible",
+            k_incompatible="nekompatibilní",
             k_joker="Žolík",
             k_joker_stickers="Joker Stickers",
             k_jokers_cap="ŽOLÍCI",
             k_legendary="Legendární",
-            k_level_prefix="lvl.",
-            k_level_up_ex="Level Up!",
+            k_level_prefix="úrov.",
+            k_level_up_ex="Vylepšeno!",
             k_locked="Zamčeno",
             k_lower_score="skóre",
-            k_lvl="lvl.",
-            k_melted_ex="Melted!",
+            k_lvl="úrov.",
+            k_melted_ex="Roztaveno!",
             k_money="Peníze",
             k_mult="Mult",
             k_no_other_jokers="No other Jokers!",
-            k_no_reward="No Reward",
+            k_no_reward="Žádná odměna",
             k_no_room_ex="No Room!",
             k_no_space_ex="No Space!",
             k_none="None",
@@ -3615,47 +3611,47 @@ return {
             k_not_allowed_ex="Not Allowed!",
             k_not_discovered="Not Discovered",
             k_numbered_cards="Numbered Cards",
-            k_or="or",
+            k_or="nebo",
             k_other="Ostatní",
             k_page="Strana",
             k_planet="Planet",
             k_planet_q="Planet?",
             k_playing_as="Playing as",
-            k_plus_joker="+1 Joker",
+            k_plus_joker="+1 Žolík",
             k_plus_planet="+1 Planet",
             k_plus_spectral="+1 Spectral",
-            k_plus_stone="+1 Stone",
+            k_plus_stone="+1 Kámen",
             k_plus_tarot="+1 Tarot",
-            k_poker_hand="poker hand",
+            k_poker_hand="pokrová ruka",
             k_profile="Profil",
             k_progress="Progress",
-            k_rank="Rank",
-            k_rare="Rare",
-            k_redeemed_ex="Redeemed!",
-            k_reroll="Reroll",
+            k_rank="Hodnota",
+            k_rare="Vzácné",
+            k_redeemed_ex="Uplatněn!",
+            k_reroll="Přetočit",
             k_reset="Reset",
             k_reward="Odměna",
             k_round="Kolo",
             k_safe_ex="Safe!",
-            k_saved_ex="Saved!",
+            k_saved_ex="Uloženo!",
             k_seed="Seed",
-            k_seeded_run="Seeded Run",
+            k_seeded_run="Seedovaná Hra",
             k_skipped_cap="SKIPPED",
-            k_spectral="Spectral",
-            k_spectral_pack="Spectral Pack",
+            k_spectral="Spectrální",
+            k_spectral_pack="Spectrální Balíček",
             k_stake="Sázka",
             k_stake_level="Úroveň Sázky",
             k_standard_pack="Standartní Balíček",
-            k_suit="Suit",
-            k_swapped_ex="Swapped!",
+            k_suit="Barva",
+            k_swapped_ex="Prohozen!",
             k_tarot="Tarot",
-            k_trophies_disabled="Trophies Disabled",
-            k_trophy="Trophy",
-            k_uncommon="Uncommon",
-            k_undisovered="Undiscovered",
+            k_trophies_disabled="Trofie Zakázány",
+            k_trophy="Trofie",
+            k_uncommon="Neobyčejné",
+            k_undisovered="Neobjeveno",
             k_unknown="?????",
             k_unlocked_ex="Odemčen!",
-            k_upgrade_ex="Upgrade!",
+            k_upgrade_ex="Vylepšen!",
             k_val_up="Value Up!",
             k_view="Zobrazit",
             k_voucher="Voucher",
@@ -3663,8 +3659,8 @@ return {
             k_wins="Výhry",
             k_x_base="X Base",
             ml_bloom_opt={
-                "Off",
-                "On",
+                "Vypnout",
+                "Zapnout",
             },
             ml_buy_and_use_target={
                 "Koupit",
@@ -3674,8 +3670,8 @@ return {
                 "Koupit",
             },
             ml_card_stats={
-                "Card",
-                "Stats",
+                "Karta",
+                "Statistiky",
             },
             ml_controller_required={
                 "A game controller is required to play.",
@@ -3700,12 +3696,12 @@ return {
                 "Enhancement, Edition, and Seal",
             },
             ml_eternal={
-                "Eternal",
-                "Can't be sold",
-                "or destroyed",
+                "Eterní",
+                "Nelze prodat",
+                "ani zničit",
             },
             ml_gold_seal_desc={
-                "Gold Seal",
+                "Zlatá Pečeť",
                 "returns to hand",
                 "when played",
             },
@@ -3731,12 +3727,12 @@ return {
                 "Prodat",
             },
             ml_shadow_opt={
-                "On",
-                "Off",
+                "Zapnout",
+                "Vypnout",
             },
             ml_smoothing_opt={
-                "Off",
-                "On",
+                "Vypnout",
+                "Zapnout",
             },
             ml_unlock_all_explanation={
                 "WARNING! Unlocking the complete Collection",
@@ -3747,15 +3743,15 @@ return {
                 "will disable trophies for this profile!",
             },
             ml_vsync_opt={
-                "VSync On",
-                "VSync Off",
+                "VSync Zapnut",
+                "VSync Vypnut",
             },
             ml_windowmode_opt={
                 "Windowed",
                 "Fullscreen",
                 "Borderless",
             },
-            ph_1_level="+1 Level",
+            ph_1_level="+1 Úroveň",
             ph_4_7_of_clubs="four 7 of Clubs",
             ph_alert_debuff_confirm="Press 'Play' again to confirm",
             ph_all_poker_hand="All Poker Hands",
@@ -3767,138 +3763,138 @@ return {
             ph_click_confirm="Select again to confirm",
             ph_deck_preview_effective="Effective total due to Jokers, Blinds, and card enhancements",
             ph_deck_preview_stones="Stones",
-            ph_defeat_the_boss="Defeat the Boss Blind",
-            ph_defeat_this_blind_1="Defeat this blind",
-            ph_defeat_this_blind_2="to discover it",
-            ph_demo_thanks_1="Thanks for playing the",
+            ph_defeat_the_boss="Poraz Boss Blind",
+            ph_defeat_this_blind_1="Poraz tento blind",
+            ph_defeat_this_blind_2="abys ho odhalil",
+            ph_demo_thanks_1="Děkujeme, že jste hráli",
             ph_demo_thanks_2="BALATRO DEMO",
-            ph_display_stickers="Display Stake Stickers during Run",
+            ph_display_stickers="Zobrazit Sázkové Nálepky během Hry",
             ph_game_over="KONEC HRY",
-            ph_improve_run="Vylepší svojí hru!",
-            ph_most_played="(most played hand)",
-            ph_mr_bones="Saved by Mr. Bones",
+            ph_improve_run="Vylepši svou hru!",
+            ph_most_played="(nejvíc hraná ruka)",
+            ph_mr_bones="Zachráněn Mr. Kůstkou",
             ph_no_boss_active="no boss active",
-            ph_no_vouchers="No vouchers redeemed this run",
+            ph_no_vouchers="Žádné Vouchery nebyly uplatněny tuto hru",
             ph_score_at_least="Skóruj alespoň",
             ph_score_cards_discarded="Cards Discarded",
-            ph_score_cards_played="Cards Played",
-            ph_score_cards_purchased="Cards Purchased",
+            ph_score_cards_played="Zahrané karty",
+            ph_score_cards_purchased="Koupené karty",
             ph_score_furthest_ante="Ante",
             ph_score_furthest_round="Kolo",
             ph_score_hand="Nejlepší Ruka",
-            ph_score_new_collection="New Discoveries",
-            ph_score_poker_hand="Most Played Hand",
-            ph_score_times_rerolled="Times Rerolled",
-            ph_select_challenge="Select a Challenge",
+            ph_score_new_collection="Nové objevy",
+            ph_score_poker_hand="Nejvíc hraná ruka",
+            ph_score_times_rerolled="Přetočeno",
+            ph_select_challenge="Vyber si Výzvu",
             ph_sneak_peek="Sneak Peek",
             ph_stat_consumable="Number of times this card has been used",
             ph_stat_joker="Total completed rounds with this card",
             ph_stat_voucher="Number of times this Voucher has been redeemed",
-            ph_unscored_hand="Hand will not score",
-            ph_up_ante_1="Up the Ante",
-            ph_up_ante_2="Raise all Blinds",
-            ph_up_ante_3="Refresh Blinds",
-            ph_vouchers_redeemed="Vouchers redeemed this run",
-            ph_you_win="YOU WIN!",
-            ph_you_win_demo="YOU WIN THE DEMO!",
+            ph_unscored_hand="Ruka nebude skórovat",
+            ph_up_ante_1="Navíšit Ante",
+            ph_up_ante_2="Zvýšit Blindy",
+            ph_up_ante_3="Obnovit Blindy",
+            ph_vouchers_redeemed="Vouchery uplatněny tuto hru",
+            ph_you_win="VYHRÁL JSI!",
+            ph_you_win_demo="VYHRÁL JSI DEMO!",
         },
         high_scores={
             boss_streak="Most Bosses in a Row",
-            collection="Collection",
+            collection="Kolekce",
             current_streak="",
             furthest_ante="Highest Ante",
             furthest_round="Nejvyšší Kolo",
             hand="Nejlepší Ruka",
             most_money="Nejvíc Peněz",
             poker_hand="Nejvíc hraná ruka",
-            win_streak="Best Win Streak",
+            win_streak="Nejlepší Výherní Streak",
         },
         labels={
-            blue_seal="Blue Seal",
-            common="Common",
+            blue_seal="Modrá Pečeť",
+            common="Běžný",
             eternal="Eternal",
-            foil="Foil",
-            gold_seal="Gold Seal",
-            holographic="Holographic",
-            legendary="Legendary",
-            locked="Locked",
-            negative="Negative",
+            foil="Fólie",
+            gold_seal="Zlatá Pečeť",
+            holographic="Holografický",
+            legendary="Legendární",
+            locked="Zamčený",
+            negative="Negativní",
             perishable="Perishable",
             pinned_left="Pinned",
             planet="Planet",
             pluto_planet="Dwarf Planet",
-            polychrome="Polychrome",
-            purple_seal="Purple Seal",
-            rare="Rare",
-            red_seal="Red Seal",
+            polychrome="Polychromový",
+            purple_seal="Fialová Pečeť",
+            rare="Vzácný",
+            red_seal="Červená Pečeť",
             rental="Rental",
             tarot="Tarot",
-            uncommon="Uncommon",
+            uncommon="Neobvyklý",
             voucher="Voucher",
         },
         poker_hand_descriptions={
             ["Five of a Kind"]={
-                "5 cards with the same rank",
+                "5 karet se stejnou hodnotou",
             },
             Flush={
-                "5 cards that share the same suit",
+                "5 karet se stejnou barvou",
             },
             ["Flush Five"]={
-                "5 cards with the same rank and suit",
+                "5 karet se stejnou hodnotou a barvou",
             },
             ["Flush House"]={
-                "A Three of a Kind and a Pair with",
-                "all cards sharing the same suit",
+                "Trojka a pár kde",
+                "všechny karty mají stejnou barvu",
             },
             ["Four of a Kind"]={
-                "4 cards with the same rank. They may",
-                "be played with 1 other unscored card",
+                "4 karty se stejnou hodnotou. Mohou",
+                "být zahrány s 1 jinou nezapočítanou kartou",
             },
             ["Full House"]={
-                "A Three of a Kind and a Pair",
+                "Trojka a pár",
             },
             ["High Card"]={
-                "If the played hand is not any of the above",
-                "hands, only the highest ranked card scores",
+                "Pokud není zahrána žádná z výše uvedených",
+                "rukou, skóruje pouze nejvyšší karta",
             },
             Pair={
-                "2 cards that share the same rank. They may",
-                "be played with up to 3 other unscored cards",
+                "2 karty se stejnou hodnotou. Mohou",
+                "být zahrány s až 3 jinými nezapočítanými kartami",
             },
             ["Royal Flush"]={
-                "5 cards in a row (consecutive ranks) with",
-                "all cards sharing the same suit",
+                "5 karet v řadě (po sobě jdoucí hodnoty) se",
+                "všech karet mají stejnou barvu",
             },
             Straight={
-                "5 cards in a row (consecutive ranks)",
+                "5 karet v řadě (po sobě jdoucí hodnoty)",
             },
             ["Straight Flush"]={
-                "5 cards in a row (consecutive ranks) with",
-                "all cards sharing the same suit",
+                "5 karet v řadě (po sobě jdoucí hodnoty) se",
+                "všech karet mají stejnou barvu",
             },
             ["Three of a Kind"]={
-                "3 cards with the same rank. They may be",
-                "played with up to 2 other unscored cards",
+                "3 karty se stejnou hodnotou. Mohou být",
+                "zahrány s až 2 jinými nezapočítanými kartami",
             },
             ["Two Pair"]={
-                "2 pairs of cards with different ranks, may",
-                "be played with 1 other unscored card",
+                "2 páry karet s různými hodnotami, mohou",
+                "být zahrány s 1 jinou nezapočítanou kartou",
             },
         },
         poker_hands={
-            ["Five of a Kind"]="Balatro!",
+            ["Five of a Kind"]="Pětice",
             Flush="Barva",
             ["Flush Five"]="Barva Pěti",
-            ["Flush House"]="Barva Domu",
+            ["Flush House"]="Flush House",
             ["Four of a Kind"]="Čtveřice",
-            ["Full House"]="Plný Dům",
+            ["Full House"]="Full House",
             ["High Card"]="Vysoká Karta",
             Pair="Pár",
-            ["Royal Flush"]="Královská Barva",
+            ["Royal Flush"]="Královská Postupka",
             Straight="Postupka",
             ["Straight Flush"]="Čistá Postupka",
             ["Three of a Kind"]="Trojice",
-            ["Two Pair"]="Dvojítý Pár",
+            ["Two Pair"]="Dva Páry",
         },
         quips={
             dq_1={
@@ -3913,7 +3909,7 @@ return {
                 "speed...",
             },
             lq_10={
-                "What a flop!",
+                "Jaký to flop!",
             },
             lq_2={
                 "We folded like",
@@ -3925,39 +3921,38 @@ return {
                 "and try again!",
             },
             lq_4={
-                "You know what",
-                "they say, the",
-                "house always wins!",
+                "Víš co říkají,",
+                "dům vždy vyhrává!",
             },
             lq_5={
-                "Looks like we",
-                "found out who",
-                "the real Joker is!",
+                "Vypadá to že",
+                "jsem zjistil kdo",
+                "je skutečný Žolík!",
             },
             lq_6={
                 "Ale né, ty jsi",
                 "taky blafoval?",
-            },
+            },  
             lq_7={
-                "Looks like the",
-                "joke's on us!",
+                "Vypadá to že",
+                "vtip je na nás!",
             },
             lq_8={
-                "If I had hands",
-                "I would have",
-                "covered my eyes!",
+                "Kdybych měl ruce",
+                "zakryl bych si",
+                "moje oči!",
             },
             lq_9={
-                "I'm literally",
-                "a fool, what's",
-                "your excuse?",
+                "Já jsem doslova",
+                "blázen, jaká je",
+                "tvoje výmluva?",
             },
             wq_1={
-                "You Aced it!",
+                "Za-eso-val jsi to!",
             },
             wq_2={
-                "You dealt with",
-                "that pretty well!",
+                "S tím jsi si poradil",
+                "docela dobře!",
             },
             wq_3={
                 "Vypadá to že jsi",
@@ -3969,17 +3964,16 @@ return {
                 "virtuální...",
             },
             wq_5={
-                "Looks like I've",
-                "taught you well!",
+                "Vypadá to že jsem",
+                "tě dobře naučil!",
             },
             wq_6={
-                "You made some",
-                "heads up plays!",
+                "Udělal jsi pár",
+                "dobrých tahů!",
             },
             wq_7={
-                "Good thing",
-                "I didn't bet",
-                "against you!",
+                "Dobře, že jsem",
+                "nevsadil proti tobě!",
             },
         },
         ranks={
@@ -3999,7 +3993,7 @@ return {
         },
         suits_plural={
             Clubs="Křížů",
-            Diamonds="Kár",
+            Diamonds="Karet",
             Hearts="Srdcí",
             Spades="Pik",
         },
@@ -4011,48 +4005,48 @@ return {
         },
         tutorial={
             bb_1={
-                "Selecting the {C:attention}Big Blind",
-                "will earn some cash",
+                "Poražením {C:attention}Velkého Blinda",
+                "se získají nějaké peníze",
             },
             bb_2={
-                "Or choose to {C:attention}skip it",
-                "to get a {C:attention}Tag{}! Each",
-                "{C:attention}Tag{} has a unique effect",
+                "Nebo si vyber {C:attention}ho přeskočit",
+                "abys dostal {C:attention}Tag{}! Každý",
+                "{C:attention}Tag{} má jiný effect",
             },
             bb_3={
-                "But keep an eye on",
-                "the {C:attention}Boss Blind{}. It",
-                "has an ability you'll",
-                "need to plan around.",
+                "Ale dávej pozor na",
+                "{C:attention}Boss Blinda{}. Má",
+                "schopnost kolem které",
+                "budeš muset plánovat.",
             },
             bb_4={
-                "if you beat it, then the",
-                "{C:attention}Ante{} goes up and all",
-                "{C:attention}Blinds{} become harder",
+                "pokud ho porazíš, tak",
+                "{C:attention}Ante{} jde nahoru a každý",
+                "{C:attention}Blind{} je těžší",
             },
             bb_5={
-                "Beat {C:attention}Ante{} #1# to win.",
-                "Now choose your path!",
+                "Poraž {C:attention}Ante{} #1# abys vyhrál.",
+                "Teď si vyber svou cestu!",
             },
             fh_1={
-                "You earn chips by",
-                "playing {C:attention}Poker hands",
+                "Získáváš Žetony",
+                "hraním {C:attention}Pokrových rukou",
             },
             fh_2={
-                "Each {C:attention}Poker hand{} earns a",
-                "base amount of {C:blue}Chips",
-                "multiplied by some {C:red}Mult",
+                "Každá {C:attention}Pokrová ruka{} získá",
+                "základní počet {C:blue}Žetonů",
+                "násobený {C:red}Multem",
             },
             fh_3={
-                "See your {C:attention}Poker hands",
-                "in the {C:attention}Run Info{} area,",
-                "along with other info",
-                "about your current run",
+                "Podívej se na své {C:attention}Pokróvé ruce",
+                "v oblasti {C:attention}Informace o hře{},",
+                "spolu s dalšími informacemi",
+                "o tvém aktuálním běhu",
             },
             fh_4={
-                "Cards also earn",
-                "you some {C:blue}Chips{},",
-                "hover over to see!",
+                "Karty také dávají",
+                "nějaké {C:blue}Žetony{},",
+                "přejeď na kartu a podívej!",
             },
             fh_4_touch={
                 "Cards also earn",
@@ -4060,9 +4054,9 @@ return {
                 "press and hold to see!",
             },
             fh_5={
-                "Now select up to",
-                "{C:attention}5{} cards to play",
-                "and press {C:blue}'Play Hand'",
+                "Teď vyber až",
+                "{C:attention}5{} karet",
+                "a klikni na {C:blue}'Zahrát Ruku'",
             },
             fh_5_touch={
                 "Now tap up to",
@@ -4070,123 +4064,123 @@ return {
                 "and press {C:blue}'Play Hand'",
             },
             fh_6={
-                "You can also {C:red}'Discard'{} up",
-                "to {C:attention}5{} selected cards",
-                "to try and make even",
-                "stronger hands. Try it!",
+                "Můžeš také {C:red}'Odhodit'{} až",
+                "{C:attention}5{} vybraných karet",
+                "skuz udělat ještě",
+                "silnější ruce. Skuz to!",
             },
             fh_7={
-                "Careful! You only have a",
-                "limited number of {C:blue}Hands",
-                "and {C:red}Discards{} per round",
+                "Pozor! Máš jenom",
+                "limitovaný počet {C:blue}Rukou",
+                "a {C:red}Odhození{} za kolo",
             },
             fh_8={
-                "Earn {C:attention}300 Chips{} before",
-                "you run out of {C:blue}Hands",
-                "to win this round.",
-                "Good luck!",
+                "Získej {C:attention}300 Žetonů{} než",
+                "ti dojdou {C:blue}Ruce",
+                "abys vyhrál todle kolo",
+                "Hodně štěstí!",
             },
             s_1={
-                "Nicely done! Now that",
-                "you're {E:1}flush{} with {C:money}Cash{},",
-                "you can buy some new",
-                "cards from the {C:attention}Shop",
+                "Hezky! Teď když",
+                "jsi v {E:1}balíku{} s {C:money}Penězi{},",
+                "můžeš si koupit nějaké nové",
+                "karty z {C:attention}Obchodu",
             },
             s_10={
-                "{C:attention}Vouchers{} are restocked",
-                "after you defeat the",
-                "{C:attention}Boss Blind{}.",
+                "{C:attention}Vouchery{} jsou",
+                "doplněny po poražení",
+                "{C:attention}Boss Blinda{}.",
             },
             s_11={
-                "And check out both of",
-                "the {C:booster}Booster Packs{} in",
-                "every shop. They're",
-                "full of goodies!",
+                "A podívej se na oba tydle",
+                "{C:booster}Balíčky Vylepšení{} v",
+                "každém obchodě. Jsou",
+                "plné dobrot!",
             },
             s_12={
-                "Let's move on to",
-                "the {C:attention}next round{}.",
+                "Pojďmě na",
+                "{C:attention}další kolo{}.",
             },
             s_2={
-                "Try buying this",
-                "handsome Devil",
+                "Skuz koupit tohodle",
+                "pohledného Ďábla",
             },
             s_2_touch={
-                "Try buying this",
-                "handsome Devil!",
+                "Skuz koupit tohodle",
+                "pohledného Ďábla",
                 "Drag it from the shop",
                 "into the {C:attention}'BUY'{} area",
             },
             s_3={
-                "This is one of the {C:attention}#1#",
-                "{C:attention}Jokers{} you can add to",
-                "your run. Every {C:attention}Joker",
-                "does something different",
+                "Tohle je jeden z {C:attention}#1#",
+                "{C:attention}Žolíků{} které můžeš přidat do",
+                "své hry. Každý {C:attention}Žolík",
+                "dělá něco jiného",
             },
             s_4={
-                "This one adds {C:red}+4 Mult{} to",
-                "every hand you play!",
+                "Tento přidává {C:red}+4 Mult{} do",
+                "každé ruky, kterou hraješ!",
             },
             s_5={
-                "Be picky, you can only",
-                "carry {C:attention}5 Joker{} cards",
-                "at a time",
+                "Buď vybíravý, můžeš mít jen",
+                "maximálně {C:attention}5 Žolíků{}",
+                "najednou",
             },
             s_6={
-                "Now buy the other",
-                "card from the {C:attention}Shop",
+                "Teď kup tu druhou",
+                "kartu z {C:attention}Obchodu",
             },
             s_7={
-                "This {C:tarot}Tarot{} card is a",
-                "{C:attention}consumable{}. This one will",
-                "enhance your playing",
-                "cards! Hold on to it.",
+                "Tato {C:tarot}Tarot{} karta je",
+                "{C:attention}spotřební{}. Tadle ti",
+                "vylepší tvoje hrací",
+                "karty! Drž se jí.",
             },
             s_8={
-                "You can carry up to",
-                "{C:attention}2 consumable{} cards",
-                "with you at a time",
+                "Můžeš mít maximálně",
+                "{C:attention}2 spotřební{} karty",
+                "u sebe najednou",
             },
             s_9={
-                "If you save up enough,",
-                "you can buy a {C:attention}Voucher{}.",
-                "{C:attention}Vouchers{} passively",
-                "upgrade your run!",
+                "Pokud si dostatečně našetříš,",
+                "můžeš si koupit {C:attention}Voucher{}.",
+                "{C:attention}Vouchery{} pasivně",
+                "vylepšují tvoji hru!",
             },
             sb_1={
-                "Hello there! My name is",
-                "{C:attention}Jimbo{}, I'm here to help",
-                "you learn how to play!",
+                "Ahoj! Moje jméno je",
+                "{C:attention}Jimbo{}, Jsem tu abych ti",
+                "pomohl naučit tě hrát!",
             },
             sb_2={
-                "Your goal is to earn",
-                "{C:blue}Chips{} to defeat",
-                "the enemy {C:attention}Blind",
+                "Tvůj cíl je získat",
+                "{C:blue}Žetony{} na poražení",
+                "nepřátelských {C:attention}Blindů",
             },
             sb_3={
-                "This here is a {C:blue}Small Blind{},",
-                "you only need to score",
-                "{C:attention}300 Chips{} to beat it.",
+                "Tady todle je {C:blue}Malý Blind{},",
+                "potřebuješ jenom {C:attention}300 žetonů{}",
+                "abys ho porazil.",
             },
             sb_4={
-                "Select the {C:blue}Small Blind",
-                "to start the round!",
+                "Vyber tohodle {C:blue}Malýho Blinda",
+                "pro začátek kola!",
             },
             sh_1={
-                "When you get more cards,",
-                "remember you can rearrange",
-                "them. {C:attention}Jokers{} trigger in",
-                "order from left to right",
+                "Když získáš víc karet,",
+                "pamatuj, že je můžeš přeorganizovat.",
+                "{C:attention}Žolíci{} se aktivují",
+                "zleva doprava.",
             },
             sh_2={
-                "And make sure that you",
-                "{C:attention}USE{} your consumables!",
+                "A nezapomeň, že",
+                "{C:attention}POUŽÍT{} své spotřební karty!",
             },
             sh_3={
-                "Select up to {C:attention}2{} cards",
-                "in your hand and press",
-                "{C:attention}'USE'{} on the {C:tarot}Tarot{} card",
-                "to enhance them!",
+                "Vyber až {C:attention}2{} karty",
+                "ve tvé ruce a zmáčkni",
+                "{C:attention}'POUŽÍT'{} na {C:tarot}Tarot{} kartě",
+                "abys je vylepšil!",
             },
             sh_3_touch={
                 "Select up to {C:attention}2{} cards",
@@ -4203,21 +4197,21 @@ return {
             a_handsize_minus="-#1# Hand Size",
             a_mult="+#1# Mult",
             a_mult_minus="-#1# Mult",
-            a_remaining="#1# Remaining",
-            a_sold_tally="#1#/#2# Sold",
+            a_remaining="#1# Zbývajících",
+            a_sold_tally="#1#/#2# Prodáno",
             a_xmult="X#1# Mult",
             a_xmult_minus="-X#1# Mult",
             ante_x_voucher="ANTE #1# VOUCHER",
-            challenges_completed="Completed #1#/#2# Challenges",
-            completed="#1#/#2# Completed",
+            challenges_completed="Dokončeno #1#/#2# Výzev",
+            completed="#1#/#2# Dokončeno",
             deck_preview_wheel_plural="Numbers may be lower due to the #1# cards drawn face down",
             deck_preview_wheel_singular="Numbers may be lower due to the #1# card drawn face down",
             interest="#1# interest per $#2# (#3# max)",
-            loyalty_active="Active!",
-            loyalty_inactive="#1# remaining",
+            loyalty_active="Aktivní!",
+            loyalty_inactive="#1# Zbývá",
             ml_foil_desc={
                 "Fólie",
-                "+#1# Chips",
+                "+#1# Žetonů",
             },
             ml_holo_desc={
                 "Holografický",
@@ -4225,11 +4219,11 @@ return {
             },
             ml_negative_consumable_desc={
                 "Negativní",
-                "+#1# consumable Slot",
+                "+#1# místo pro Spotřební kartu",
             },
             ml_negative_desc={
                 "Negativní",
-                "+#1# Joker Slot",
+                "+#1# místo pro žolíka",
             },
             ml_polychrome_desc={
                 "Polychromový",

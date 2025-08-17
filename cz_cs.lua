@@ -10,7 +10,7 @@ return {
                 },
             },
             b_anaglyph={
-                name="Anaglyph Deck",
+                name="Anaglyfický Balíček",
                 text={
                     "After defeating each",
                     "{C:attention}Boss Blind{}, gain a",
@@ -34,7 +34,7 @@ return {
                 },
             },
             b_challenge={
-                name="Challenge Deck",
+                name="Výzvový Balíček",
                 text={
                     "",
                 },
@@ -48,46 +48,46 @@ return {
                 },
             },
             b_erratic={
-                name="Erratic Deck",
+                name="Nepravidelný Balíček",
                 text={
-                    "All {C:attention}Ranks{} and",
-                    "{C:attention}Suits{} in deck",
-                    "are randomized",
+                    "Všechny {C:attention}Hodnosti{} a",
+                    "{C:attention}Barvy{} v balíčku",
+                    "jsou náhodné",
                 },
             },
             b_ghost={
                 name="Balíček Duchů",
                 text={
-                    "{C:spectral}Spectral{} cards may",
-                    "appear in the shop,",
-                    "start with a {C:spectral,T:c_hex}Hex{} card",
+                    "{C:spectral}Spektrální{} karty se mohou",
+                    "objevit v obchodě",
+                    "začni s kartou {C:spectral,T:c_hex}Začarovat{}",
                 },
             },
             b_green={
                 name="Zelený Balíček",
                 text={
-                    "At end of each Round:",
-                    "{C:money}$#1#{s:0.85} per remaining {C:blue}Hand",
-                    "{C:money}$#2#{s:0.85} per remaining {C:red}Discard",
-                    "Earn no {C:attention}Interest",
+                    "Na konci každého kola:",
+                    "{C:money}$#1#{s:0.85} za každou zbývající {C:blue}Ruku",
+                    "{C:money}$#2#{s:0.85} za každé zbývající {C:red}Zahození",
+                    "Nezískáváš {C:attention}Úrok",
                 },
             },
             b_magic={
                 name="Zázračný Balíček",
                 text={
-                    "Start run with the",
-                    "{C:tarot,T:v_crystal_ball}#1#{} voucher",
-                    "and {C:attention}2{} copies",
-                    "of {C:tarot,T:c_fool}#2#",
+                    "Začni hru s",
+                    "poukazem {C:tarot,T:v_crystal_ball}#1#{}",
+                    "a {C:attention}2{} kopiemi",
+                    "karty{C:tarot,T:c_fool}Blázen",
                 },
             },
             b_nebula={
                 name="Nebula Balíček",
                 text={
-                    "Start run with the",
-                    "{C:planet,T:v_telescope}#1#{} voucher",
+                    "Začni hru s",
+                    "{C:planet,T:v_telescope}#1#{}",
                     "",
-                    "{C:red}#2#{} consumable slot",
+                    "{C:red}#2#{} místo na spotřební karty",
                 },
             },
             b_painted={
@@ -2259,10 +2259,10 @@ return {
             undiscovered_voucher={
                 name="Neobjeven",
                 text={
-                    "Redeem this",
-                    "voucher in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Uplatni tento",
+                    "poukaz v",
+                    "neseedované hře",
+                    "abys zjistil co dělá",
                 },
             },
             white_sticker={
@@ -2777,16 +2777,16 @@ return {
                 },
             },
             tag_voucher={
-                name="Voucher Tag",
+                name="Poukazový Tag",
                 text={
-                    "Adds one {C:voucher}Voucher",
-                    "to the next shop",
+                    "Přidá jeden {C:voucher}Poukaz",
+                    "do dalšího obchodu",
                 },
             },
         },
         Tarot={
             c_chariot={
-                name="Válečný Vůz",
+                name="Vůz",
                 text={
                     "Vylepší {C:attention}#1#{} selected",
                     "card into a",
@@ -2836,7 +2836,7 @@ return {
                 },
             },
             c_hanged_man={
-                name="Pověšenec",
+                name="Viselec",
                 text={
                     "Destroys up to",
                     "{C:attention}#1#{} selected cards",
@@ -2882,7 +2882,7 @@ return {
                 },
             },
             c_lovers={
-                name="Milovníci",
+                name="Zamilovaní",
                 text={
                     "Enhances {C:attention}#1#{} selected",
                     "card into a",
@@ -2890,7 +2890,7 @@ return {
                 },
             },
             c_magician={
-                name="Čaroděj",
+                name="Mág",
                 text={
                     "Enhances {C:attention}#1#{}",
                     "selected cards to",
@@ -2930,7 +2930,7 @@ return {
                 },
             },
             c_temperance={
-                name="Střídmost",
+                name="Umění",
                 text={
                     "Gives the total sell",
                     "value of all current",
@@ -2971,8 +2971,7 @@ return {
                     "{C:dark_edition}+1{} Joker Slot",
                 },
                 unlock={
-                    "Redeem {C:voucher}Blank{}",
-                    "{C:attention}#1#{} total times",
+                    "Uplatni {C:voucher}Prázdný{} poukaz {C:attention}#1#{}",
                     "{C:inactive}(#2#)",
                 },
             },
@@ -3309,16 +3308,16 @@ return {
             completionist="Discover 100% of your collection",
             completionist_plus="Win with every deck on Gold Stake difficulty",
             completionist_plus_plus="Earn a Gold Sticker on every Joker",
-            extreme_couponer="Discover every Voucher",
+            extreme_couponer="Objev každý Poukaz",
             flushed="Play a Flush with 5 Wild Cards",
-            heads_up="Win a Run",
+            heads_up="Vyhraj Hru",
             high_stakes="Win a run on at least Gold Stake difficulty",
             legendary="Discover a Legendary Joker",
             low_stakes="Win a run on at least Red Stake difficulty",
             mid_stakes="Win a run on at least Black Stake difficulty",
             nest_egg="Have $400 or more during a single run",
             retrograde="Get any poker hand to level 10",
-            roi="Buy 5 Vouchers by Ante 4",
+            roi="Kup 5 Poukazů čtvrtým Ante",
             royale="Play a Royal Flush",
             rule_bender="Complete any challenge run",
             rule_breaker="Complete every challenge run",
@@ -3524,13 +3523,13 @@ return {
             b_stat_planets="Planety",
             b_stat_spectrals="Spektrály",
             b_stat_tarots="Taroty",
-            b_stat_vouchers="Vouchers",
+            b_stat_vouchers="Poukazy",
             b_stats="Statistiky",
             b_tags="Tagy",
-            b_tarot_cards="Tarot Karty",
+            b_tarot_cards="Tarotové Karty",
             b_unlock_all="Unlock All",
             b_use="POUŽÍT",
-            b_vouchers="Vouchery",
+            b_vouchers="Poukazy",
             b_wishlist="Wishlist on Steam",
             k_aces="Esa",
             k_achievement="Achievement",
@@ -3652,8 +3651,8 @@ return {
             k_upgrade_ex="Vylepšen!",
             k_val_up="Value Up!",
             k_view="Zobrazit",
-            k_voucher="Voucher",
-            k_vouchers_cap="VOUCHERY",
+            k_voucher="Poukaz",
+            k_vouchers_cap="POUKAZY",
             k_wins="Výhry",
             k_x_base="X Base",
             ml_bloom_opt={
@@ -3772,7 +3771,7 @@ return {
             ph_most_played="(nejvíc hraná ruka)",
             ph_mr_bones="Zachráněn Mr. Kůstkou",
             ph_no_boss_active="no boss active",
-            ph_no_vouchers="Žádné Vouchery nebyly uplatněny tuto hru",
+            ph_no_vouchers="Žádné Poukazy nebyly uplatněny tuto hru",
             ph_score_at_least="Skóruj alespoň",
             ph_score_cards_discarded="Cards Discarded",
             ph_score_cards_played="Zahrané karty",
@@ -3787,12 +3786,12 @@ return {
             ph_sneak_peek="Sneak Peek",
             ph_stat_consumable="Number of times this card has been used",
             ph_stat_joker="Total completed rounds with this card",
-            ph_stat_voucher="Number of times this Voucher has been redeemed",
+            ph_stat_voucher="Počet uplatnění tohoto poukazu",
             ph_unscored_hand="Ruka nebude skórovat",
             ph_up_ante_1="Navíšit Ante",
             ph_up_ante_2="Zvýšit Blindy",
             ph_up_ante_3="Obnovit Blindy",
-            ph_vouchers_redeemed="Vouchery uplatněny tuto hru",
+            ph_vouchers_redeemed="Poukazy uplatněny tuto hru",
             ph_you_win="VYHRÁL JSI!",
             ph_you_win_demo="VYHRÁL JSI DEMO!",
         },
@@ -3828,7 +3827,7 @@ return {
             rental="Rental",
             tarot="Tarot",
             uncommon="Neobvyklý",
-            voucher="Voucher",
+            voucher="Poukaz",
         },
         poker_hand_descriptions={
             ["Five of a Kind"]={
@@ -4085,7 +4084,7 @@ return {
                 "karty z {C:attention}Obchodu",
             },
             s_10={
-                "{C:attention}Vouchery{} jsou",
+                "{C:attention}Poukazy{} jsou",
                 "doplněny po poražení",
                 "{C:attention}Boss Blinda{}.",
             },
@@ -4141,8 +4140,8 @@ return {
             },
             s_9={
                 "Pokud si dostatečně našetříš,",
-                "můžeš si koupit {C:attention}Voucher{}.",
-                "{C:attention}Vouchery{} pasivně",
+                "můžeš si koupit {C:attention}Poukaz{}.",
+                "{C:attention}Poukazy{} pasivně",
                 "vylepšují tvoji hru!",
             },
             sb_1={
@@ -4191,15 +4190,15 @@ return {
             a_chips="+#1#",
             a_chips_minus="-#1#",
             a_hands="+#1# Hands",
-            a_handsize="+#1# Hand Size",
-            a_handsize_minus="-#1# Hand Size",
+            a_handsize="+#1# Velikost Ruky",
+            a_handsize_minus="-#1# Velikost Ruky",
             a_mult="+#1# Mult",
             a_mult_minus="-#1# Mult",
             a_remaining="#1# Zbývajících",
             a_sold_tally="#1#/#2# Prodáno",
             a_xmult="X#1# Mult",
             a_xmult_minus="-X#1# Mult",
-            ante_x_voucher="ANTE #1# VOUCHER",
+            ante_x_voucher="ANTE #1# POUKAZ",
             challenges_completed="Dokončeno #1#/#2# Výzev",
             completed="#1#/#2# Dokončeno",
             deck_preview_wheel_plural="Numbers may be lower due to the #1# cards drawn face down",

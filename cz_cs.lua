@@ -394,7 +394,7 @@ return {
                 },
             },
             m_lucky={
-                name="Štěstí Karta",
+                name="Karta Štěstí",
                 text={
                     "Šance {C:green}#1# z #3#{}",
                     "pro {C:mult}+#2#{} Mult",
@@ -2737,14 +2737,14 @@ return {
                 },
             },
             tag_rare={
-                name="Rare Tag",
+                name="Vzácný Tag",
                 text={
                     "Shop has a free",
                     "{C:red}Rare Joker",
                 },
             },
             tag_skip={
-                name="Speed Tag",
+                name="Rychlý Tag",
                 text={
                     "Gives {C:money}$#1#{} per skipped",
                     "Blind this run",
@@ -2752,7 +2752,7 @@ return {
                 },
             },
             tag_standard={
-                name="Standard Tag",
+                name="Standardní Tag",
                 text={
                     "Dá zadarmo",
                     "{C:attention}Mega Standartní Balíček",
@@ -2767,7 +2767,7 @@ return {
                 },
             },
             tag_uncommon={
-                name="Uncommon Tag",
+                name="Neobyčejný Tag",
                 text={
                     "Shop has a free",
                     "{C:green}Uncommon Joker",
@@ -2889,17 +2889,17 @@ return {
             c_magician={
                 name="Mág",
                 text={
-                    "Enhances {C:attention}#1#{}",
-                    "selected cards to",
-                    "{C:attention}#2#s",
+                    "Vylepší {C:attention}#1#{}",
+                    "vybrané karty na",
+                    "{C:attention}#2#",
                 },
             },
             c_moon={
                 name="Měsíc",
                 text={
-                    "Converts up to",
-                    "{C:attention}#1#{} selected cards",
-                    "to {V:1}#2#{}",
+                    "Přemění {C:attention}#1#{}",
+                    "vybrané karty na",
+                    "{V:1}#2#{}",
                 },
             },
             c_star={
@@ -3682,8 +3682,8 @@ return {
                 "the newsletter at playbalatro.com",
             },
             ml_disabled_seed={
-                "All Unlocks and",
-                "Discoveries disabled",
+                "Všechny odemčení a",
+                "objevení deaktivovány",
             },
             ml_edition_seal_enhancement_explanation={
                 "Hrací karty mohou mít jedno vylepšení, edici a pečeť.",
@@ -3769,7 +3769,7 @@ return {
             ph_no_boss_active="no boss active",
             ph_no_vouchers="Žádné Poukazy nebyly uplatněny tuto hru",
             ph_score_at_least="Skóruj alespoň",
-            ph_score_cards_discarded="Cards Discarded",
+            ph_score_cards_discarded="Odhozené Kartyplay",
             ph_score_cards_played="Zahrané karty",
             ph_score_cards_purchased="Koupené karty",
             ph_score_furthest_ante="Ante",

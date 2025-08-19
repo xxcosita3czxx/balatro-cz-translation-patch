@@ -2398,7 +2398,7 @@ return {
                 name="Aura",
                 text={
                     "Přidá {C:dark_edition}Foil{}, {C:dark_edition}Holographic{},",
-                    "nebo {C:dark_edition}Polychrome{} efekt na",
+                    "nebo {C:dark_edition}Polychrome{} edici na",
                     "{C:attention}1{} vybranou kartu v ruce",
                 },
             },
@@ -2453,7 +2453,7 @@ return {
             c_hex={
                 name="Začarovat",
                 text={
-                    "Přidá {C:dark_edition}Polychrome{} efekt na",
+                    "Přidá {C:dark_edition}Polychrome{} edici na",
                     "náhodného {C:attention}Žolíka{}, zničí",
                     "všechny ostatní žolíky",
                 },

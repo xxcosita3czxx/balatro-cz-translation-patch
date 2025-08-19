@@ -670,18 +670,17 @@ return {
                 name="Kavenda",
                 text={
                     "{X:mult,C:white} X#1# {} Mult",
-                    "{C:green}#2# in #3#{} chance this",
-                    "card is destroyed",
-                    "at end of round",
+                    "{C:green}#2# z #3#{} šance tato",
+                    "karta je na konci kola zničena",
                 },
             },
             j_ceremonial={
                 name="Slavnostní dýka",
                 text={
-                    "When {C:attention}Blind{} is selected,",
-                    "destroy Joker to the right",
-                    "and permanently add {C:attention}double",
-                    "its sell value to this {C:red}Mult",
+                    "Když je zvolen {C:attention}Blind{},",
+                    "zničí žolíka napravo",
+                    "a natrvalo přidá {C:attention}dvojnásobek",
+                    "jeho prodejní hodnoty k {C:red}Mult",
                     "{C:inactive}(Teď {C:mult}+#1#{C:inactive} Mult)",
                 },
             },
@@ -1187,9 +1186,9 @@ return {
             j_marble={
                 name="Mramorový Žolík",
                 text={
-                    "Přidá jednu {C:attention}Kamenou{} kartu",
-                    "do balíčku když je",
-                    "{C:attention}Blind{} vybrán",
+                    "Přidá jednu {C:attention}Kamennou{} kartu",
+                    "do balíčku když",
+                    "je zvolen {C:attention}Blind{}",
                 },
             },
             j_matador={

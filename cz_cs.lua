@@ -726,7 +726,7 @@ return {
             j_cloud_9={
                 name="Mrak 9",
                 text={
-                    "Získej{C:money}$#1#{} za každou",
+                    "Získej {C:money}$#1#{} za každou",
                     "{C:attention}9{} ve tvém {C:attention}celém balíčku",
                     "na konci kola",
                     "{C:inactive}(Teď {C:money}$#2#{}{C:inactive})",
@@ -848,9 +848,8 @@ return {
             j_egg={
                 name="Vejce",
                 text={
-                    "Gains {C:money}$#1#{} of",
-                    "{C:attention}sell value{} at",
-                    "end of round",
+                    "Získá {C:money}$#1#{} {C:attention}prodejní hodnoty{}",
+                    "na konci kola",
                 },
             },
             j_erosion={
@@ -1782,18 +1781,17 @@ return {
             j_turtle_bean={
                 name="Želví Fazole",
                 text={
-                    "{C:attention}+#1#{} hand size,",
-                    "reduces by",
-                    "{C:red}#2#{} every round",
+                    "{C:attention}+#1#{} k velikosti ruky,",
+                    "sníží se o",
+                    "{C:red}#2#{} každé kolo",
                 },
             },
             j_vagabond={
-                name="Vandrák",
+                name="Tulák",
                 text={
-                    "Create a {C:purple}Tarot{} card",
-                    "if hand is played",
-                    "with {C:money}$#1#{} or less",
-                },
+                    "Vytvoří {C:purple}Tarotovou{} kartu",
+                    "jestli je ruka zahrána",
+                    "s {C:money}$#1#{} nebo méně",                },
             },
             j_vampire={
                 name="Upír",
@@ -2017,7 +2015,7 @@ return {
                 name="Jumbo Balíček Arkány",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:tarot} Tarot{} karet",
+                    "{C:attention}#2#{C:tarot} Tarotových{} karet",
                     "pro instantní použití",
                 },
             },
@@ -2025,7 +2023,7 @@ return {
                 name="Mega Balíček Arkány",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:tarot} Tarot{} karet",
+                    "{C:attention}#2#{C:tarot} Tarotových{} karet",
                     "pro instantní použití"
                 },
             },
@@ -2033,7 +2031,7 @@ return {
                 name="Balíček Arkány",
                 text={
                     "Vyber si {C:attention}#1#{} z",
-                    "{C:attention}#2#{C:tarot} Tarot{} karet",
+                    "{C:attention}#2#{C:tarot} Tarotových{} karet",
                     "pro instantní použití"
                 },
             },
@@ -3688,8 +3686,7 @@ return {
                 "Discoveries disabled",
             },
             ml_edition_seal_enhancement_explanation={
-                "Playing cards may each have one",
-                "Enhancement, Edition, and Seal",
+                "Hrací karty mohou mít jedno vylepšení, edici a pečeť.",
             },
             ml_eternal={
                 "Eterní",

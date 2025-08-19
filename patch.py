@@ -7,8 +7,8 @@ import customtkinter as ctk
 import tkinter.filedialog
 import re
 
-lua_entry_lang = """['cz_cs'] = {font = 6, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}}"""
-lua_entry_font = ""
+lua_entry_lang = """['cz_cs'] = {font = 10, label = "Česky", key = 'cz_cs', beta=true, button = "Jazyková zpětná vazba", warning = {'Tento jazyk je stále v beta verzi. Chcete-li nám pomoci','vylepšit ho, klikněte prosím na tlačítko zpětné vazby.', 'Klikněte znovu pro potvrzení.'}}"""
+lua_entry_font = """{file = "resources/fonts/m6x11pluscs.ttf", render_scale = self.TILESIZE*10, TEXT_HEIGHT_SCALE = 0.83, TEXT_OFFSET = {x=10,y=-20}, FONTSCALE = 0.1, squish = 1, DESCSCALE = 1}"""
 
 def patch_language(lua_file, lua_entry_lang, lua_entry_font):
     with open(lua_file, "rb") as f:

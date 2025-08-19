@@ -767,9 +767,9 @@ return {
             j_delayed_grat={
                 name="Delayed Gratification",
                 text={
-                    "Earn {C:money}$#1#{} per {C:attention}discard{} if",
-                    "no discards are used",
-                    "by end of the round",
+                    "Získej {C:money}$#1#{} za {C:attention}zahození{} pokud",
+                    "do konce kola nejsou",
+                    "žádné zahození použity",
                 },
             },
             j_devious={
@@ -1279,11 +1279,10 @@ return {
                 },
             },
             j_onyx_agate={
-                name="Onyx Agate",
+                name="Onyxový Achát",
                 text={
-                    "Played cards with",
-                    "{C:clubs}Club{} suit give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Hrané {C:clubs}Křížové{} karty dávají",
+                    "{C:mult}+#1#{} Mult při bodování",
                 },
                 unlock={
                     "Have at least {E:1,C:attention}#1#",
@@ -1312,9 +1311,9 @@ return {
                     "obsahuje {C:attention}#2#",
                 },
                 unlock={
-                    "Win a run",
-                    "without playing",
-                    "a {E:1,C:attention}#1#",
+                    "Vyhraj hru",
+                    "aniž bys zahrál",
+                    "{E:1,C:attention}Postupku",
                 },
             },
             j_pareidolia={
@@ -1328,10 +1327,10 @@ return {
             j_perkeo={
                 name="Perkeo",
                 text={
-                    "Creates a {C:dark_edition}Negative{} copy of",
-                    "{C:attention}1{} random {C:attention}consumable{}",
-                    "card in your possession",
-                    "at the end of the {C:attention}shop",
+                    "Vytvoří {C:attention}1{} {C:dark_edition}Negativní{} kopii",
+                    "náhodné {C:attention}spotřební{}",
+                    "karty ve tvém vlastnictví",
+                    "na konci {C:attention}obchodu",
                 },
                 unlock={
                     "{E:1,s:1.3}?????",
@@ -1340,9 +1339,9 @@ return {
             j_photograph={
                 name="Fotograf",
                 text={
-                    "First played {C:attention}face",
-                    "card gives {X:mult,C:white} X#1# {} Mult",
-                    "when scored",
+                    "První hraná {C:attention}figurová",
+                    "karta dává {X:mult,C:white} X#1# {} Mult",
+                    "při bodování",
                 },
             },
             j_popcorn={
@@ -1365,8 +1364,8 @@ return {
                 name="Nudle",
                 text={
                     "{X:mult,C:white} X#1# {} Mult,",
-                    "loses {X:mult,C:white} X#2# {} Mult",
-                    "per {C:attention}card{} discarded",
+                    "ztratí {X:mult,C:white} X#2# {} Mult",
+                    "za každou zahozenou {C:attention}kartu{}",
                 },
             },
             j_red_card={

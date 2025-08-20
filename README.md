@@ -1,3 +1,5 @@
+> Přemístěno na https://github.com/mozkomor1/balatro-czech-translation/tree/main
+
 # Čeština do hry Balatro
 
 český jazyk do hry balatro bez potřeby modloaderu, patch nainstaluje přímo do hry, jako kdyby byl nativní
@@ -16,4 +18,4 @@ při jakýchkoliv problémech nebo nápadech do překladu, discord: @cosita3cz ,
 
 ## Credits
 
-Děkuji [Mozkomorovi]([https://](https://github.com/mozkomor1/balatro-czech-translation/tree/main)) za upravený m6x11plus font s háčky a čárky pro češtinu ❤️
+Děkuji [Mozkomorovi](https://github.com/mozkomor1/balatro-czech-translation/tree/main) za upravený m6x11plus font s háčky a čárky pro češtinu ❤️
